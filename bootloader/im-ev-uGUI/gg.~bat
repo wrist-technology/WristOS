@@ -1,0 +1,7 @@
+copy Q:\P\mzkterminal\fw-bl\microgui\microgui.c c:\E\P\hodinky\fw-blslim\im-ev-uGUI\microgui.c
+copy Q:\P\mzkterminal\fw-bl\microgui\microgui.h c:\E\P\hodinky\fw-blslim\im-ev-uGUI\microgui.h
+copy Q:\P\mzkterminal\fw-bl\microgui\ugscrdrv.c c:\E\P\hodinky\fw-blslim\im-ev-uGUI\ugscrdrv.c
+copy Q:\P\mzkterminal\fw-bl\microgui\ugscrdrv.h c:\E\P\hodinky\fw-blslim\im-ev-uGUI\ugscrdrv.h
+
+make clean
+make

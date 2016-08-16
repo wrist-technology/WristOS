@@ -1,0 +1,21 @@
+/* ========================================================================== */
+/*                                                                            */
+/*   screen.h                                                               */
+/*   (c) 2009 Wrist Technology Ltd                                                          */
+/*                                                                            */
+/*   Description                                                              */
+/*                                                                            */
+/* ========================================================================== */
+
+//'do not fill' colour:
+#define SCR_TRANSPARENT_COLOR 0x01ffffff
+
+
+#include "firmware_conf.h"
+
+typedef int16_t scr_coord_t;
+
+typedef uint32_t scr_color_t;
+typedef uint32_t scr_bitmapbuf_t;  
+typedef uint32_t scr_buf_t;
+

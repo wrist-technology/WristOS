@@ -1,0 +1,5 @@
+#ifndef AMBLIGHTSENSOR_H_
+#define AMBLIGHTSENSOR_H_
+
+#endif // AMBLIGHTSENSOR_H_
+

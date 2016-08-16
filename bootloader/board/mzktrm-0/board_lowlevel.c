@@ -1,0 +1,576 @@
+/* ----------------------------------------------------------------------------
+ *         ATMEL Microcontroller Software Support 
+ * ----------------------------------------------------------------------------
+ * Copyright (c) 2008, Atmel Corporation
+ *
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * - Redistributions of source code must retain the above copyright notice,
+ * this list of conditions and the disclaimer below.
+ *
+ * Atmel's name may not be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ *
+ * DISCLAIMER: THIS SOFTWARE IS PROVIDED BY ATMEL "AS IS" AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE
+ * DISCLAIMED. IN NO EVENT SHALL ATMEL BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+ * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * ----------------------------------------------------------------------------
+ */
+
+//------------------------------------------------------------------------------
+/// \unit
+///
+/// !Purpose
+///
+/// Provides the low-level initialization function that gets called on chip
+/// startup.
+///
+/// !Usage
+///
+/// LowLevelInit() is called in #board_cstartup.S#.
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+//         Headers
+//------------------------------------------------------------------------------
+
+#include "hardware_conf.h"
+#include "firmware_conf.h"
+#include "lcd_lm6029.h"
+#include <peripherals/pmc/pmc.h>
+
+//XTAL = 18,432MHz 
+//MCK = (18,432/10)*52 = 95,8464MHz  MCK: 47,9232
+
+//------------------------------------------------------------------------------
+//         Internal definitions
+//------------------------------------------------------------------------------
+// Startup time of main oscillator (in number of slow clock ticks).
+#define BOARD_OSCOUNT           (AT91C_CKGR_OSCOUNT & (0x40 << 8))
+
+// USB PLL divisor value to obtain a 48MHz clock. DIV 1=/2
+#define BOARD_USBDIV            AT91C_CKGR_USBDIV_1  
+
+// PLL frequency range.
+#define BOARD_CKGR_PLL          AT91C_CKGR_OUT_0
+
+// PLL startup time (in number of slow clock ticks).
+#define BOARD_PLLCOUNT          (16 << 8)
+
+// PLL MUL value.
+#define BOARD_MUL               (AT91C_CKGR_MUL & (51 << 16))
+
+// PLL DIV value.
+#define BOARD_DIV               (AT91C_CKGR_DIV & 10)
+
+// Master clock prescaler value.
+#define BOARD_PRESCALER         AT91C_PMC_PRES_CLK_2
+
+//------------------------------------------------------------------------------
+//         Internal functions
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+/// Default spurious interrupt handler. Infinite loop.
+//------------------------------------------------------------------------------
+void defaultSpuriousHandler( void )
+{
+    //while (1);
+}
+
+//------------------------------------------------------------------------------
+/// Default handler for fast interrupt requests. Infinite loop.
+//------------------------------------------------------------------------------
+void defaultFiqHandler( void )
+{
+    //while (1);
+}
+
+//------------------------------------------------------------------------------
+/// Default handler for standard interrupt requests. Infinite loop.
+//------------------------------------------------------------------------------
+void defaultIrqHandler( void )
+{
+    //while (1);
+}
+
+/*
+    Function: BOARD_RemapRam
+        Changes the mapping of the chip so that the remap area mirrors the
+        internal RAM.
+*/
+void BOARD_RemapRam( void )
+{
+    //if (BOARD_GetRemap() != BOARD_RAM) {
+
+        AT91C_BASE_MC->MC_RCR = AT91C_MC_RCB;
+    //}
+}
+
+
+
+//------------------------------------------------------------------------------
+//         Exported functions
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+/// Performs the low-level initialization of the chip. This includes EFC, master
+/// clock, AIC & watchdog configuration, as well as memory remapping.
+//------------------------------------------------------------------------------
+void LowLevelInit( void )
+{
+    unsigned char i;
+
+    //conf flash controller:
+    //AT91C_BASE_MC->MC0_FMR = ((AT91C_MC_FMCN)&(50 <<16)) | AT91C_MC_FWS_1FWS;
+    AT91C_BASE_MC->MC_FMR = ((AT91C_MC_FMCN)&(50 <<16)) | AT91C_MC_FWS_1FWS;
+
+    //  Watchdog Disable
+    //
+    // result: 0xFFFFFD44 = 0x00008000  (AT91C_BASE_WDTC->WDTC_WDMR = Watchdog Mode Register)
+  	AT91C_BASE_WDTC->WDTC_WDMR = AT91C_WDTC_WDDIS;
+	
+    //enable RESET low_
+    AT91C_BASE_RSTC->RSTC_RMR = 0xA5000501; //enable reset and reset len approx 4ms.
+
+//#if !defined(sdram)
+    /* Initialize main oscillator
+     ****************************/
+    AT91C_BASE_PMC->PMC_MOR = BOARD_OSCOUNT | AT91C_CKGR_MOSCEN;
+    while (!(AT91C_BASE_PMC->PMC_SR & AT91C_PMC_MOSCS));
+
+    /* Initialize PLL at 96MHz (96.109) and USB clock to 48MHz */
+    AT91C_BASE_PMC->PMC_PLLR = BOARD_USBDIV | BOARD_CKGR_PLL | BOARD_PLLCOUNT
+                               | BOARD_MUL | BOARD_DIV;
+    while (!(AT91C_BASE_PMC->PMC_SR & AT91C_PMC_LOCK));
+
+    /* Wait for the master clock if it was already initialized */
+    while (!(AT91C_BASE_PMC->PMC_SR & AT91C_PMC_MCKRDY));
+
+    /* Switch to fast clock
+     **********************/
+    /* Switch to slow clock + prescaler */
+    AT91C_BASE_PMC->PMC_MCKR = BOARD_PRESCALER;
+    while (!(AT91C_BASE_PMC->PMC_SR & AT91C_PMC_MCKRDY));
+
+    /* Switch to fast clock + prescaler */
+    AT91C_BASE_PMC->PMC_MCKR |= AT91C_PMC_CSS_PLL_CLK;
+    while (!(AT91C_BASE_PMC->PMC_SR & AT91C_PMC_MCKRDY));
+//#endif //#if !defined(sdram)
+    
+    /* Initialize AIC
+     ****************/
+    AT91C_BASE_AIC->AIC_IDCR = 0xFFFFFFFF;
+    AT91C_BASE_AIC->AIC_SVR[0] = (unsigned int) defaultFiqHandler;
+    for (i = 1; i < 31; i++) {
+
+        AT91C_BASE_AIC->AIC_SVR[i] = (unsigned int) defaultIrqHandler;
+    }
+    AT91C_BASE_AIC->AIC_SPU = (unsigned int) defaultSpuriousHandler;
+
+    // Unstack nested interrupts
+    for (i = 0; i < 8 ; i++) {
+
+        AT91C_BASE_AIC->AIC_EOICR = 0;
+    }
+
+    // Enable Debug mode
+    //AT91C_BASE_AIC->AIC_DCR = AT91C_AIC_DCR_PROT;
+
+    /* Watchdog initialization
+     *************************/
+    //AT91C_BASE_WDTC->WDTC_WDMR = AT91C_WDTC_WDDIS;
+
+    /* Remap
+     *******/
+    BOARD_RemapRam();
+
+    // Disable RTT and PIT interrupts (potential problem when program A
+    // configures RTT, then program B wants to use PIT only, interrupts
+    // from the RTT will still occur since they both use AT91C_ID_SYS)
+    AT91C_BASE_RTTC->RTTC_RTMR &= ~(AT91C_RTTC_ALMIEN | AT91C_RTTC_RTTINCIEN);
+    AT91C_BASE_PITC->PITC_PIMR &= ~AT91C_PITC_PITIEN;
+}
+
+//aic init only:
+void initAIC(void)
+{
+/* Initialize AIC
+     ****************/
+    int i; 
+    AT91C_BASE_AIC->AIC_IDCR = 0xFFFFFFFF;
+    AT91C_BASE_AIC->AIC_SVR[0] = (unsigned int) defaultFiqHandler;
+    for (i = 1; i < 31; i++) {
+
+        AT91C_BASE_AIC->AIC_SVR[i] = (unsigned int) defaultIrqHandler;
+    }
+    AT91C_BASE_AIC->AIC_SPU = (unsigned int) defaultSpuriousHandler;
+
+    // Unstack nested interrupts
+    for (i = 0; i < 8 ; i++) {
+
+        AT91C_BASE_AIC->AIC_EOICR = 0;
+    }
+    AT91C_BASE_RTTC->RTTC_RTMR &= ~(AT91C_RTTC_ALMIEN | AT91C_RTTC_RTTINCIEN);
+    AT91C_BASE_PITC->PITC_PIMR &= ~AT91C_PITC_PITIEN;
+}
+
+void pioInit(void)
+{
+   volatile AT91PS_PIO	pPIOA = AT91C_BASE_PIOA;	  
+   volatile AT91PS_PIO	pPIO_SPI = SPI_PIO_BASE;
+   
+   //assign controller functions:
+   //Peripheral A/B:
+   
+   pPIO_SPI->PIO_ASR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK | SPI_PIO_NPCS;
+   pPIO_SPI->PIO_OWDR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK | SPI_PIO_NPCS;
+   pPIO_SPI->PIO_PDR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK | SPI_PIO_NPCS;
+   
+   pPIOA->PIO_ASR = DBG_PIN_RXD | DBG_PIN_TXD; 
+   //pPIOA->PIO_BSR = 0x03;//pwm
+   pPIOA->PIO_OWDR = DBG_PIN_RXD | DBG_PIN_TXD | 0x3;
+   pPIOA->PIO_PDR =  DBG_PIN_RXD | DBG_PIN_TXD | 0x3; 
+   
+   pPIOA->PIO_IFDR= 0xFFFFFFFF; //disable filters
+   pPIOA->PIO_IDR = 0xFFFFFFFF; //disable ints
+   pPIOA->PIO_PPUDR = 0xFFFFFFFF; //disable pullups
+       
+   //   
+   pPIOA->PIO_PER = BTN0 | BTN1 | BTN2 | BTN3 | BTN4;	
+   pPIOA->PIO_ODR = BTN0 | BTN1 | BTN2 | BTN3 | BTN4;   
+   pPIOA->PIO_IFER =  BTN0 | BTN1 | BTN2 | BTN3 | BTN4;
+   pPIOA->PIO_PPUER = BTN0 | BTN1 | BTN2 | BTN3 | BTN4;    
+   
+   //LCD interface   
+   pPIOA->PIO_SODR = USB_PIO_PULLUP; 
+   pPIOA->PIO_PER =USB_PIO_PULLUP;							
+	 pPIOA->PIO_OER = USB_PIO_PULLUP;	
+	 
+	 pPIOA->PIO_CODR = SPMEN_PIO; 
+   pPIOA->PIO_PER =SPMEN_PIO;							
+	 pPIOA->PIO_OER = SPMEN_PIO;
+   
+   //USB interface   
+   pPIOA->PIO_SODR = LCDNBLEN|LCDNCS|LCDRS|LCDNRD|LCDNWR; 
+   pPIOA->PIO_PER = LCDNBLEN|LCDNCS|LCDRS|LCDNRD|LCDNWR;							
+	 pPIOA->PIO_OER = LCDNBLEN|LCDNCS|LCDRS|LCDNRD|LCDNWR;								
+	 
+	 //enable pullups on DB7-0
+	 pPIOA->PIO_PER = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;												
+	 pPIOA->PIO_CODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+	 pPIOA->PIO_PPUER = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+	 
+	 pPIOA->PIO_CODR = LCDNBLEN;
+}
+
+void readLCDsta(void)
+{
+  volatile AT91PS_PIO	pPIO = LCD_PIO_BASE;
+  
+  
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_CODR = LCDRS|LCDNCS;
+  
+  //clr all
+  
+  
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  //nop:
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  
+  
+  //nop
+  pPIO->PIO_CODR = LCDNCS;
+  pPIO->PIO_CODR = LCDNCS;
+  //write
+  pPIO->PIO_CODR = LCDNRD;
+  pPIO->PIO_CODR = LCDNRD;
+  pPIO->PIO_CODR = LCDNRD;
+  //endwrite
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_SODR = LCDRS|LCDNCS;
+      
+  //delay(5);
+}
+
+uint8_t readLCD(void)
+{
+  volatile AT91PS_PIO	pPIO = LCD_PIO_BASE;
+  uint32_t port;
+  uint8_t r;
+  
+  pPIO->PIO_SODR = LCDNRD|LCDNWR|LCDRS;
+  pPIO->PIO_CODR = LCDNCS;
+  
+
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  //nop:
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  
+  
+  //nop
+  pPIO->PIO_CODR = LCDNCS;
+  pPIO->PIO_CODR = LCDNCS;
+  //read
+  pPIO->PIO_CODR = LCDNRD;
+  pPIO->PIO_CODR = LCDNRD;
+  pPIO->PIO_CODR = LCDNRD;
+  pPIO->PIO_CODR = LCDNRD;
+  pPIO->PIO_CODR = LCDNRD;
+  port= pPIO->PIO_PDSR;
+  //endwrite
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  pPIO->PIO_SODR = LCDRS|LCDNCS;
+
+  r=0;
+  if (port&LCDDB0) r|=0x01;
+  if (port&LCDDB1) r|=0x02;
+  if (port&LCDDB2) r|=0x04;
+  if (port&LCDDB3) r|=0x08;
+  if (port&LCDDB4) r|=0x10;
+  if (port&LCDDB5) r|=0x20;
+  if (port&LCDDB6) r|=0x40;
+  if (port&LCDDB7) r|=0x80;
+  return r;
+}
+
+void writeLCD(uint8_t b, uint8_t cmd)
+{
+  volatile AT91PS_PIO	pPIO = LCD_PIO_BASE;  
+  uint32_t bm;
+  //pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  if (cmd) { pPIO->PIO_CODR = LCDRS|LCDNCS; } else { pPIO->PIO_SODR = LCDRS; pPIO->PIO_CODR = LCDNCS;}
+  
+  //clr all
+  pPIO->PIO_CODR =  LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  //set only bits 1:
+  bm=0;
+  if (b&0x1) bm|=LCDDB0;
+  if (b&0x2) bm|=LCDDB1;
+  if (b&0x4) bm|=LCDDB2;
+  if (b&0x8) bm|=LCDDB3;
+  if (b&0x10) bm|=LCDDB4;
+  if (b&0x20) bm|=LCDDB5;
+  if (b&0x40) bm|=LCDDB6;
+  if (b&0x80) bm|=LCDDB7;
+  pPIO->PIO_SODR = bm;
+  //enable output DB7-0
+  pPIO->PIO_OER = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+
+  //nop
+  pPIO->PIO_CODR = LCDNCS;
+  pPIO->PIO_CODR = LCDNCS;
+
+  //write
+  pPIO->PIO_CODR = LCDNWR;
+  pPIO->PIO_CODR = LCDNWR;
+  pPIO->PIO_CODR = LCDNWR;
+  //endwrite
+  pPIO->PIO_SODR = LCDNRD|LCDNWR;
+  
+  pPIO->PIO_SODR = LCDRS|LCDNCS;
+  
+  pPIO->PIO_ODR = LCDDB0|LCDDB1|LCDDB2|LCDDB3|LCDDB4|LCDDB5|LCDDB6|LCDDB7;
+  
+  //delay(50);
+  //readLCDsta();
+}
+
+/*
+ *
+ * Initialize all SPI channels and set default speeds
+ *
+*/
+void rtc_init(void)
+{
+    SPI pSPI = SPI_BASE;
+    SPI_PIO pSPI_PIO = SPI_PIO_BASE;    
+    // disable PIO from controlling MOSI, MISO, SCK (=hand over to SPI)
+    pSPI_PIO->PIO_PDR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK;
+    
+    //chip select interface   
+    pSPI_PIO->PIO_CODR = SPI_PIO_CSRTC; 
+    pSPI_PIO->PIO_PER =SPI_PIO_CSRTC;							
+	  pSPI_PIO->PIO_OER = SPI_PIO_CSRTC;	
+    
+    
+    pSPI_PIO->PIO_OER = SPI_PIO_MOSI | SPI_PIO_SPCK;
+    pSPI_PIO->PIO_ODR = SPI_PIO_MISO;
+    // set pin-functions in PIO Controller
+    pSPI_PIO->PIO_ASR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK;
+
+
+    // enable peripheral clock for SPI ( PID Bit 5 )
+    pPMC->PMC_PCER = ( (uint32_t) 1 << AT91C_ID_SPI ); // n.b. IDs are just bit-numbers
+
+    pSPI->SPI_IDR = 0x3F;//disable all ints.
+    
+    // SPI enable and reset
+    pSPI->SPI_CR = AT91C_SPI_SPIEN | AT91C_SPI_SWRST;
+
+    // SPI mode: master, fixed periph. sel., FDIV=0, fault detection disabled
+    // with FDIV=0, spi clock = MCK / value in SCBR
+    pSPI->SPI_MR  = AT91C_SPI_MSTR | AT91C_SPI_PS_FIXED | AT91C_SPI_MODFDIS;
+
+    // channel 2 is PA31, SD-Card
+    //pSPI->SPI_CSR[1] = 0x00000400 | AT91C_SPI_NCPHA | AT91C_SPI_CSAAT | AT91C_SPI_BITS_8;
+    pSPI->SPI_CSR[RTC_SPI_CHANNEL] = 0x00002500 | AT91C_SPI_NCPHA | AT91C_SPI_CSAAT | AT91C_SPI_BITS_8;
+
+    // enable SPI
+    pSPI->SPI_CR = AT91C_SPI_SPIEN;
+}
+
+/**
+ * Send and Receive an SPI byte.
+ *
+ * Transmit a byte over SPI and fetch any incoming bytes.
+ * \note Note that the "byte" can be from 8 to 16 bit long!
+ * \param dout     Byte to send (8-16 bits)
+ * \param last     Flag indicating if the CS should be released after transmission, 1 = release
+ * \return         Byte received from SPI
+ *
+*/
+uint16_t rtc_byte(uint16_t dout, uint8_t last)
+{
+    uint16_t din;
+    SPI pSPI = SPI_BASE;
+    SPI_PIO pSPI_PIO = SPI_PIO_BASE;  
+
+    while ( !( pSPI->SPI_SR & AT91C_SPI_TDRE ) ); // wait for channel ready
+
+    // activate required channel
+    pSPI->SPI_MR  = AT91C_SPI_MSTR | AT91C_SPI_PS_FIXED | AT91C_SPI_MODFDIS;
+
+    //manual chipselect:
+    pSPI_PIO->PIO_SODR = SPI_PIO_CSRTC; 
+    pSPI->SPI_MR  |= (RTC_SPI_CHANNEL<<16);//0x00010000;  //NCPS1
+    
+    //pSPI->SPI_CSR[1] = 0x00000400 | AT91C_SPI_NCPHA | AT91C_SPI_CSAAT | AT91C_SPI_BITS_8;
+    pSPI->SPI_CSR[SDCARD_SPI_CHANNEL] = 0x00002500 | AT91C_SPI_NCPHA | AT91C_SPI_CSAAT | AT91C_SPI_BITS_8;
+    
+    pSPI->SPI_TDR = dout;
+
+    while ( !( pSPI->SPI_SR & AT91C_SPI_RDRF ) );   // wait for incoming data
+
+    din = pSPI->SPI_RDR ;                           // get received data
+
+    if (last) {
+        pSPI->SPI_CR = AT91C_SPI_SPIEN | AT91C_SPI_LASTXFER;
+        //manual chipselect:
+        pSPI_PIO->PIO_CODR = SPI_PIO_CSRTC; 
+     }   
+
+    return din;
+}
+
+int rtc_readTime(void)
+{
+  rtc_byte(0x93, 0);
+  return rtc_byte(0, 1);
+
+}
+
+/*
+void lcd_drawrect(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t color)
+{
+  uint8_t col, sfrac, efrac, mask, mask2,i, epage, spage, spage8;
+  if ((x1>=128)||(y1>=64)||(x2>=128)||(y2>=64)) return;
+  
+  
+  spage = y1>>3; spage8=spage;
+  epage = (y2+1)>>3;
+  sfrac = y1&0x7;
+  efrac = (y2+1)&0x7;
+  
+  
+  
+  if ((sfrac)||((efrac)&&(epage==spage)))
+  {
+     //read-modify-write access:     
+     mask=0;
+     for (i=0;i<sfrac;i++) { mask<<=1; mask|=1; }
+     mask2=0;
+     if ((efrac)&&(epage==spage))
+     {
+       mask2=0xfe;
+       for (i=1;i<efrac;i++) { mask2<<=1; mask2&=0xFE; }
+     }
+     mask|=mask2;
+     writeLCD(LCDI_RMW,1);
+     writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+     writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+     writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&(y1>>3)),1);
+     for (col=x1;col<=x2;col++)
+     {
+       readLCD();//dummy?
+       writeLCD((readLCD()&mask)|((~mask)&color),0);
+     }
+     writeLCD(LCDI_RMWEND,1);  
+     
+     spage8++; //this page was partially filled.
+  }
+  
+  if ((efrac)&&(epage>spage))
+  {
+     //read-modify-write access:
+     writeLCD(LCDI_RMW,1);
+     writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+     writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+     writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&((epage))),1);     
+     mask=1;
+     for (i=1;i<efrac;i++) { mask<<=1; mask|=1; }  
+     
+     for (col=x1;col<=x2;col++)
+     {
+       readLCD();//dummy?
+       writeLCD(((readLCD()&(~mask))|((mask)&color)),0);
+     }
+     writeLCD(LCDI_RMWEND,1);  
+     
+     //epage--; //this page was partially filled.
+  }
+  
+  
+  // full page write iff  
+  while (epage>spage8)
+  {
+     //some space can be written only:
+     //setup page    
+    writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&(spage8)),1);
+    writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+    writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+    for (col=x1;col<=x2;col++)
+    {
+      writeLCD(color,0);
+    }
+    spage8++;
+  }
+  
+  
+
+}
+*/
+
+void writemash(void)
+{
+   int i;
+   //writeLCD(LCDI_RMW,1);
+   for (i=0;i<100;i++) writeLCD(0xA5,0);
+  //writeLCD(LCDI_RMW,1);
+}

@@ -1,0 +1,254 @@
+/**
+ * \file usb_lun.c
+ * Logical Unit Number (LUN) functions
+ *
+ * Logical Unit Number handling functions
+ *  
+ * FIXIES, UPDATES, PORTS, ANSI-C: Wrist Technology Ltd  
+ *
+ * BASED ON:
+ *
+ * AT91SAM7S-128 USB Mass Storage Device with SD Card by Michael Wolf\n
+ * Copyright (C) 2008 Michael Wolf\n\n
+ * 
+ * 
+ * This program is free software: you can redistribute it and/or modify\n
+ * it under the terms of the GNU General Public License as published by\n
+ * the Free Software Foundation, either version 3 of the License, or\n
+ * any later version.\n\n
+ * 
+ * This program is distributed in the hope that it will be useful,\n
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of\n
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n
+ * GNU General Public License for more details.\n\n
+ * 
+ * You should have received a copy of the GNU General Public License\n
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n
+ * 
+ */
+#include "hardware_conf.h"
+#include "firmware_conf.h"
+#include <screen/screen.h>
+#include <screen/font.h>
+#include <debug/trace.h>
+#include <utils/macros.h>
+#include <sdcard/sdcard.h>
+#include "usb_drv.h"
+#include "usb_msd.h"
+#include "usb_sbc.h"
+#include "usb_lun.h"
+#include "usb_std.h"
+#include "usb_bot.h"
+
+S_lun pLun[1];  //!< LUNs used by the BOT driver
+extern uint16_t bytes_per_sector;
+
+/**
+ * Inquiry data used to describe the device
+ * 
+ */
+static const S_sbc_inquiry_data sInquiryData = {
+
+    SBC_DIRECT_ACCESS_BLOCK_DEVICE,  // Direct-access block device
+    SBC_PERIPHERAL_DEVICE_CONNECTED, // Peripheral device is connected
+    0x00,                            // Reserved bits
+    0x01,                            // Media is removable
+    SBC_SPC_VERSION_4,               // SPC-4 supported
+    0x2,                             // Response data format, must be 0x2
+    false,                           // Hierarchical addressing not supported
+    false,                           // ACA not supported
+    0,                               // Obsolete bits
+    sizeof(S_sbc_inquiry_data) - 5,  // Additional length
+    false,                           // No embedded SCC
+    false,                           // No access control coordinator
+    SBC_TPGS_NONE,                   // No target port support group
+    false,                           // Third-party copy not supported
+    0,                               // Reserved bits
+    false,                           // Protection information not supported
+    0,                               // Obsolete bit
+    false,                           // No embedded enclosure service component
+    0,                               // ???
+    false,                           // Device is not multi-port
+    0,                               // Obsolete bits
+    0,                               // Unused feature
+    0,                               // Unused features
+    false,                           // Task management model not supported
+    0,                               // ???
+    // T10 vendor identification
+    {'J','e','l','u',' ','H','B',' '},
+    // Vendor-defined product ID
+    {'y','P','o','d',' ','M','P','3',' ','P','l','a','y','e','r',' '},
+    // Vendor-defined product revision
+    {'1','.','0','0'},
+    // Vendor-specific data
+    {'y','P','o','d',' ','C','a','r','d',' ','L','o','a','d','e','r',' ',' ',' ',' '},
+    0x00,                            // Unused features
+    0x00,                            // Reserved bits
+    {SBC_VERSION_DESCRIPTOR_SBC_3},  // SBC-3 compliant device
+    // Reserved
+};
+
+/**
+ * Initializes a LUN instance.
+ * 
+ * \param  pBuffer      Pointer to a buffer used for read/write operation and
+ *                      which must be dBlockSize bytes long.
+ * \param  dSize        Total size of the LUN in bytes
+ * \param  dBlockSize   Length of one block of the LUN
+ * 
+ */
+void lun_init(unsigned char *pBuffer,
+              //unsigned long  dSize,
+              unsigned long long  dSize,
+              unsigned int   dBlockSize)
+{
+    unsigned int dLogicalBlockAddress = (dSize / dBlockSize) - 1;
+    TRACE_LUN("LUN init\n");
+
+    // Initialize LUN
+    pLun->dSize = dSize;
+    pLun->dBlockSize = dBlockSize;
+    pLun->pReadWriteBuffer = pBuffer;
+
+    // Initialize request sense data
+    pLun->sRequestSenseData.bResponseCode = SBC_SENSE_DATA_FIXED_CURRENT;
+    pLun->sRequestSenseData.isValid = true;
+    pLun->sRequestSenseData.bObsolete1 = 0;
+    pLun->sRequestSenseData.bSenseKey = SBC_SENSE_KEY_NO_SENSE;
+    pLun->sRequestSenseData.bReserved1 = 0;
+    pLun->sRequestSenseData.isILI = false;
+    pLun->sRequestSenseData.isEOM = false;
+    pLun->sRequestSenseData.isFilemark = false;
+    pLun->sRequestSenseData.pInformation[0] = 0;
+    pLun->sRequestSenseData.pInformation[1] = 0;
+    pLun->sRequestSenseData.pInformation[2] = 0;
+    pLun->sRequestSenseData.pInformation[3] = 0;
+    pLun->sRequestSenseData.bAdditionalSenseLength
+        = sizeof(S_sbc_request_sense_data) - 8;
+    pLun->sRequestSenseData.bAdditionalSenseCode = 0;
+    pLun->sRequestSenseData.bAdditionalSenseCodeQualifier = 0;
+    pLun->sRequestSenseData.bFieldReplaceableUnitCode = 0;
+    pLun->sRequestSenseData.bSenseKeySpecific = 0;
+    pLun->sRequestSenseData.pSenseKeySpecific[0] = 0;
+    pLun->sRequestSenseData.pSenseKeySpecific[0] = 0;
+    pLun->sRequestSenseData.isSKSV = false;
+
+    // Initialize inquiry data
+    pLun->pInquiryData = &sInquiryData;
+
+    // Initialize read capacity data
+    STORE_DWORDB(dLogicalBlockAddress,
+                 pLun->sReadCapacityData.pLogicalBlockAddress);
+    STORE_DWORDB(dBlockSize, pLun->sReadCapacityData.pLogicalBlockLength);
+    
+    //$$ Wrist Technology Ltd change:
+    pLun->bMediaStatus = SD_STATUS_READY;
+}
+
+
+/**
+ * Reads data from a LUN, starting at the specified block address.
+ * 
+ * \param  dBlockAddress First block address to read
+ * \param  pData         Pointer to a data buffer in which to store the data
+ * \param  dLength       Number of blocks to read
+ * \param  fCallback     Optional callback to invoke when the read finishes
+ * \param  pArgument     Optional callback argument 
+ * \return Operation result code
+ * 
+ */
+unsigned char lun_read(unsigned long dBlockAddress,
+                       void         *pData,
+                       unsigned int dLength,
+                       Callback_f   fCallback,
+                       void         *pArgument)
+{
+    unsigned char bStatus;
+
+    // Check that the data is not too big
+    if ((dLength * pLun->dBlockSize)
+        > (pLun->dSize - pLun->dBlockSize * dBlockAddress))
+    {
+        TRACE_LUN("LUN_Read: Data too big\n");
+        bStatus = USB_STATUS_ABORTED;
+    }
+    else
+    { 
+        TRACE_LUN("LUNRead(%d)[%d] ", dBlockAddress, dLength);
+       
+        pLun->bMediaStatus = SD_STATUS_BUSY;
+
+        // Start read operation
+        bStatus = sd_readsector(dBlockAddress, pData, (Callback_f) fCallback,pArgument);
+
+        pLun->bMediaStatus = SD_STATUS_READY;
+        // Check result code
+        if (bStatus == SD_OK)
+        {
+            bStatus = USB_STATUS_SUCCESS;
+        }
+        else
+        {
+            TRACE_LUN("W: LUN_Read: Cannot read media\n");
+            bStatus = USB_STATUS_ABORTED;
+        }
+    }
+
+    return bStatus;
+}
+
+
+/**
+ * Writes data on the a LUN starting at the specified block address.
+ * 
+ * \param  dBlockAddress First block address to write
+ * \param  pData         Pointer to the data to write
+ * \param  dLength       Number of blocks to write
+ * \param  fCallback     Optional callback to invoke when the write finishes
+ * \param  pArgument     Optional callback argument 
+ * \return Operation result code
+ * 
+ */
+unsigned char lun_write(unsigned long dBlockAddress,
+                        void         *pData,
+                        unsigned int dLength,
+                        Callback_f   fCallback,
+                        void         *pArgument)
+{
+    unsigned char bStatus;
+
+    // Check that the data is not too big
+    if ((dLength * pLun->dBlockSize)
+        > (pLun->dSize - pLun->dBlockSize * dBlockAddress))
+    {
+        TRACE_LUN("LUN_Write: Data too big\n");
+        bStatus = USB_STATUS_ABORTED;
+    }
+    else
+    {
+        TRACE_LUN("LUNWrite(%d)[%d] ", dBlockAddress,dLength);
+        
+        pLun->bMediaStatus = SD_STATUS_BUSY;
+        // Start write operation
+        bStatus = sd_writesector(dBlockAddress,
+                                 pData,
+                                (Callback_f) fCallback,
+                                pArgument);
+
+        pLun->bMediaStatus = SD_STATUS_READY;
+        
+        // Check operation result code
+        if (bStatus == SD_OK)
+        {
+            bStatus = USB_STATUS_SUCCESS;
+        }
+        else
+        {
+            TRACE_LUN("LUN_Write: Cannot write media\n");
+            bStatus = USB_STATUS_ABORTED;
+        }
+    }
+
+    return bStatus;
+}
+

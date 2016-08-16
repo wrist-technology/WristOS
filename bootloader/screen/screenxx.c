@@ -1,0 +1,143 @@
+/* ========================================================================== */
+/*                                                                            */
+/*   screen.c                                                               */
+/*   (c) 2009 Wrist Technology Ltd                                                          */
+/*                                                                            */
+/*   Description                                                              */
+/*                                                                            */
+/* ========================================================================== */
+
+
+/**
+ *  Screen driver
+ *
+ *
+ *   
+*/
+
+#include <stdio.h>
+#include "hardware_conf.h"
+#include "firmware_conf.h"
+#include <debug/trace.h>
+#include <utils/delay.h>
+#include <peripherals/oled/oled.h>
+
+#include "screen.h"
+
+
+
+
+
+scr_coord_t scrscrX1;
+scr_coord_t scrscrX2;
+scr_coord_t scrscrY1;
+scr_coord_t scrscrY2;
+uint16_t scrrot, scrmirror;
+
+//scr buffer, allocate mem!
+extern scr_buf_t * scrbuf; 
+
+//note: requires the SMC pins (AD0.., D0..D15, R/W) already configured!
+int scrInit(void)
+{
+  //init hw, switch power on and clear display
+  (void) oledInitHw();  
+  
+  //configure screen window
+  scrscrX1=0; scrscrX2=OLED_RESOLUTION_X-1; 
+  scrscrY1=0; scrscrY2=OLED_RESOLUTION_Y-1;
+  
+  //oledScreen(scrscrX1,scrscrY1,scrscrX2,scrscrY2);
+  scrbuf = NULL;  
+  scrrot = 0;
+  scrmirror = 0;
+  
+  return 0;
+}
+
+void scrWriteRect(scr_coord_t left_x, scr_coord_t top_y, scr_coord_t right_x, scr_coord_t bot_y, scr_color_t color)
+{
+  scr_coord_t x1,x2,y1,y2;
+  volatile oled_access_fast *pFastOLED;
+  oled_access_fast col;
+  volatile oled_access_cmd *pOLED;
+  uint32_t writes,i;
+    
+  TRACE_ALL("[SCR TRG:"); 
+  if (scrbuf==NULL)
+  {
+    //direct to screen
+    if (left_x>=0) x1 = left_x; else x1=0; if (left_x<OLED_RESOLUTION_X) x1 = left_x; else x1=OLED_RESOLUTION_X-1;
+    if (right_x>=0) x2 = right_x; else x2=0; if (right_x<OLED_RESOLUTION_X) x2 = right_x; else x2=OLED_RESOLUTION_X-1;
+    if (top_y>=0) y1 = top_y; else y1=0; if (top_y<OLED_RESOLUTION_Y) y1 = top_y; else y1=OLED_RESOLUTION_Y-1;
+    if (bot_y>=0) y2 = bot_y; else y2=0; if (bot_y<OLED_RESOLUTION_Y) y2 = bot_y; else y2=OLED_RESOLUTION_Y-1;
+    
+    //clear screen (blank, black)
+    oledWriteCommand(MX1_ADDR, x1);
+    oledWriteCommand(MY1_ADDR, y1);
+    oledWriteCommand(MX2_ADDR, x2);
+    oledWriteCommand(MY2_ADDR, y2);
+    oledWriteCommand(MEMORY_ACCESSP_X, x1);
+    oledWriteCommand(MEMORY_ACCESSP_Y, y1);  
+    pOLED=OLED_CMD_BASE;  
+    *pOLED = (OLED_DDRAM<<1); //bit align          
+    pFastOLED = OLED_PARAM_BASE;
+    writes = (((x2-x1+1)*(y2-y1+1))/8)+1;   
+    col = rgb2w((color&0xff),(color>>8)&0xff,(color>>16)&0xff);
+    col = col | (col<<32);
+    //this is ok - if rectangle is < 8pix overwrites picture many times          
+    for (i=0;i<(writes);(i++))
+    {    
+      *pFastOLED = col;
+      *pFastOLED = col;
+      *pFastOLED = col;
+      *pFastOLED = col;            
+    }
+    
+  } else {
+    //write to screen memory buffer 
+     TRACE_ALL("BUF]"); 
+  }
+}
+
+
+void scrWriteBitmap(scr_coord_t left_x, scr_coord_t top_y, scr_coord_t right_x, scr_coord_t bot_y, scr_bitmapbuf_t *buf)
+{
+  scr_coord_t x1,x2,y1,y2;
+  //volatile oled_access_fast *pFastOLED;  
+  volatile oled_access_cmd *pCMDOLED;
+  volatile oled_access *pOLED;
+  uint32_t writes,i;
+  
+  if (scrbuf==NULL)
+  {
+    if (left_x>=0) x1 = left_x; else x1=0; if (left_x<OLED_RESOLUTION_X) x1 = left_x; else x1=OLED_RESOLUTION_X-1;
+    if (right_x>=0) x2 = right_x; else x2=0; if (right_x<OLED_RESOLUTION_X) x2 = right_x; else x2=OLED_RESOLUTION_X-1;
+    if (top_y>=0) y1 = top_y; else y1=0; if (top_y<OLED_RESOLUTION_Y) y1 = top_y; else y1=OLED_RESOLUTION_Y-1;
+    if (bot_y>=0) y2 = bot_y; else y2=0; if (bot_y<OLED_RESOLUTION_Y) y2 = bot_y; else y2=OLED_RESOLUTION_Y-1;
+
+    //direct to screen
+    //clear screen (blank, black)
+    oledWriteCommand(MX1_ADDR, x1);
+    oledWriteCommand(MY1_ADDR, y1);
+    oledWriteCommand(MX2_ADDR, x2);
+    oledWriteCommand(MY2_ADDR, y2);
+    oledWriteCommand(MEMORY_ACCESSP_X, x1);
+    oledWriteCommand(MEMORY_ACCESSP_Y, y1);  
+    pCMDOLED=OLED_CMD_BASE;  
+    *pCMDOLED = (OLED_DDRAM<<1); //bit align
+           
+    pOLED = OLED_PARAM_BASE;
+    writes = (((x2-x1+1)*(y2-y1+1)));   
+              
+    for (i=0;i<(writes);(i++))
+    {          
+      *pOLED = rgb2w((buf[i]&0xff),(buf[i]>>8)&0xff,(buf[i]>>16)&0xff);;                  
+      //*pOLED = rgb2w(0xff,0xff,0xff);
+    }
+  
+  } else {
+    //write to screen memory buffer 
+  
+  }
+}

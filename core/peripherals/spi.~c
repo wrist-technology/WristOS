@@ -1,0 +1,105 @@
+/**
+ * \file spi.c
+ * SPI interface handler code
+ * 
+ * Code for SPI interface configuration and handling
+ * 
+ * AT91SAM7S-128 USB Mass Storage Device with SD Card by Michael Wolf\n
+ * Copyright (C) 2008 Michael Wolf\n\n
+ * 
+ * This program is free software: you can redistribute it and/or modify\n
+ * it under the terms of the GNU General Public License as published by\n
+ * the Free Software Foundation, either version 3 of the License, or\n
+ * any later version.\n\n
+ *
+ * This program is distributed in the hope that it will be useful,\n
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of\n
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n
+ * GNU General Public License for more details.\n\n
+ *
+ * You should have received a copy of the GNU General Public License\n
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n
+ *
+ */
+
+#include "hardware_conf.h"
+#include "firmware_conf.h"
+#include <utils/interrupt_utils.h>
+#include <debug/trace.h>
+#include <peripherals/pmc/pmc.h>
+#include "spi.h"
+
+
+//AT91PS_SPI  pSPI = AT91C_BASE_SPI;      // SPI controller
+
+SPI pSPI = SPI_BASE;
+SPI_PIO pSPI_PIO = SPI_PIO_BASE;  
+
+
+/**
+ * Initialize SPI
+ *
+ * Initialize all SPI channels and set default speeds
+ *
+*/
+void spi_init(void)
+{
+    // disable PIO from controlling MOSI, MISO, SCK (=hand over to SPI)
+    pSPI_PIO->PIO_PDR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK | SPI_PIO_NPCS;
+    
+    pSPI_PIO->PIO_OER = SPI_PIO_MOSI | SPI_PIO_SPCK | SPI_PIO_NPCS;
+    pSPI_PIO->PIO_ODR = SPI_PIO_MISO;
+    // set pin-functions in PIO Controller
+    pSPI_PIO->PIO_ASR = SPI_PIO_MISO | SPI_PIO_MOSI | SPI_PIO_SPCK | SPI_PIO_NPCS;
+
+
+    // enable peripheral clock for SPI ( PID Bit 5 )
+    pPMC->PMC_PCER = ( (uint32_t) 1 << AT91C_ID_SPI ); // n.b. IDs are just bit-numbers
+
+    // SPI enable and reset
+    pSPI->SPI_CR = AT91C_SPI_SPIEN | AT91C_SPI_SWRST;
+
+    // SPI mode: master, fixed periph. sel., FDIV=0, fault detection disabled
+    // with FDIV=0, spi clock = MCK / value in SCBR
+    pSPI->SPI_MR  = AT91C_SPI_MSTR | AT91C_SPI_PS_FIXED | AT91C_SPI_MODFDIS;
+
+    // channel 2 is PA31, SD-Card
+    pSPI->SPI_CSR[1] = 0x00000400 | AT91C_SPI_NCPHA | AT91C_SPI_CSAAT | AT91C_SPI_BITS_8;
+
+    // enable SPI
+    pSPI->SPI_CR = AT91C_SPI_SPIEN;
+}
+
+/**
+ * Send and Receive an SPI byte.
+ *
+ * Transmit a byte over SPI and fetch any incoming bytes.
+ * \note Note that the "byte" can be from 8 to 16 bit long!
+ * \param dout     Byte to send (8-16 bits)
+ * \param last     Flag indicating if the CS should be released after transmission, 1 = release
+ * \return         Byte received from SPI
+ *
+*/
+uint16_t spi_byte(uint16_t dout, uint8_t last)
+{
+    uint16_t din;
+
+    while ( !( pSPI->SPI_SR & AT91C_SPI_TDRE ) ); // wait for channel ready
+
+    // activate required channel
+    pSPI->SPI_MR  = AT91C_SPI_MSTR | AT91C_SPI_PS_FIXED | AT91C_SPI_MODFDIS;
+
+    pSPI->SPI_MR  |= 0x00010000;  //NCPS1
+    pSPI->SPI_CSR[1] = 0x00000400 | AT91C_SPI_NCPHA | AT91C_SPI_CSAAT | AT91C_SPI_BITS_8;
+    
+    pSPI->SPI_TDR = dout;
+
+    while ( !( pSPI->SPI_SR & AT91C_SPI_RDRF ) );   // wait for incoming data
+
+    din = pSPI->SPI_RDR ;                           // get received data
+
+    if (last)
+        pSPI->SPI_CR = AT91C_SPI_SPIEN | AT91C_SPI_LASTXFER;
+
+    return din;
+}

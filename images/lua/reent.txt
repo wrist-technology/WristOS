@@ -1,0 +1,30 @@
+typedef struct tskTaskControlBlock 
+{ 
+... 
+     #if ( configUSE_NEWLIB_REENTRANT == 1 ) 
+         struct _reent reent; 
+     #endif 
+} tskTCB; 
+
+
+void vTaskSwitchContext( void ) 
+{ 
+... 
+     #if ( configUSE_NEWLIB_REENTRANT == 1 ) 
+         _impure_ptr = &(pxCurrentTCB->reent); 
+     #endif 
+
+     traceTASK_SWITCHED_IN(); 
+     vWriteTraceToBuffer(); 
+} 
+
+
+static void prvInitialiseTCBVariables( tskTCB *pxTCB, const signed portCHAR * 
+const pcName, unsigned portBASE_TYPE uxPriority ) 
+{ 
+... 
+     #if ( configUSE_NEWLIB_REENTRANT == 1 ) 
+         _REENT_INIT_PTR((&(pxTCB->reent))); 
+     #endif 
+} 
+

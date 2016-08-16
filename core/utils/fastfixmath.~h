@@ -1,0 +1,25 @@
+/**
+ *
+ *  fastfixmath.h
+ *
+ *  Wrist Technology Ltd
+ *
+*/ 
+
+#ifndef FASTFIXMATH_H_
+#define FASTFIXMATH_H_
+
+//this represents the "1"
+#define FFM_UNIT 2048
+#define FFM_PI   6433 //pi*2048
+#define FFM_NAN  0x80000001
+
+extern int32_t ffm_mult(int32_t a, int32_t b);
+
+extern int32_t ffm_sin(int32_t);
+
+extern int32_t ffm_cos(int32_t);
+
+
+#endif
+      

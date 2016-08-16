@@ -1,0 +1,662 @@
+main.o: main.c ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ phybusif.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/sdp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/rfcomm.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/ppp.h \
+ ../../../../../../contrib/apps/httpserver_raw/httpd.h
+mem.o: ../../../../../../contrib/../lwip/src/core/mem.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h
+memp.o: ../../../../../../contrib/../lwip/src/core/memp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/raw.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/igmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/api.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/api_msg.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcpip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/netif/etharp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_frag.h
+netif.o: ../../../../../../contrib/../lwip/src/core/netif.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/igmp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/etharp.h
+pbuf.o: ../../../../../../contrib/../lwip/src/core/pbuf.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/ports/unix/include/arch/perf.h
+raw.o: ../../../../../../contrib/../lwip/src/core/raw.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h
+stats.o: ../../../../../../contrib/../lwip/src/core/stats.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h
+sys.o: ../../../../../../contrib/../lwip/src/core/sys.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h
+tcp.o: ../../../../../../contrib/../lwip/src/core/tcp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h
+tcp_in.o: ../../../../../../contrib/../lwip/src/core/tcp_in.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/ports/unix/include/arch/perf.h
+tcp_out.o: ../../../../../../contrib/../lwip/src/core/tcp_out.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h
+udp.o: ../../../../../../contrib/../lwip/src/core/udp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/ports/unix/include/arch/perf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/dhcp.h
+dhcp.o: ../../../../../../contrib/../lwip/src/core/dhcp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h
+init.o: ../../../../../../contrib/../lwip/src/core/init.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/init.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sockets.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/raw.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/autoip.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/igmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/dns.h \
+ ../../../../../../contrib/../lwip/src/include/netif/etharp.h
+icmp.o: ../../../../../../contrib/../lwip/src/core/ipv4/icmp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h
+ip.o: ../../../../../../contrib/../lwip/src/core/ipv4/ip.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_frag.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/igmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/raw.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/dhcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/ports/unix/include/arch/perf.h
+inet.o: ../../../../../../contrib/../lwip/src/core/ipv4/inet.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h
+ip_addr.o: ../../../../../../contrib/../lwip/src/core/ipv4/ip_addr.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h
+ip_frag.o: ../../../../../../contrib/../lwip/src/core/ipv4/ip_frag.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_frag.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h
+inet_chksum.o: \
+ ../../../../../../contrib/../lwip/src/core/ipv4/inet_chksum.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet_chksum.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h
+asn1_dec.o: ../../../../../../contrib/../lwip/src/core/snmp/asn1_dec.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_asn1.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h
+asn1_enc.o: ../../../../../../contrib/../lwip/src/core/snmp/asn1_enc.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_asn1.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h
+mib2.o: ../../../../../../contrib/../lwip/src/core/snmp/mib2.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_frag.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_asn1.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_structs.h \
+ private_mib.h \
+ ../../../../../../contrib/../lwip/src/include/netif/etharp.h
+mib_structs.o: \
+ ../../../../../../contrib/../lwip/src/core/snmp/mib_structs.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_structs.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h private_mib.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h
+msg_in.o: ../../../../../../contrib/../lwip/src/core/snmp/msg_in.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_asn1.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_msg.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_structs.h \
+ private_mib.h
+msg_out.o: ../../../../../../contrib/../lwip/src/core/snmp/msg_out.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_asn1.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_msg.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_structs.h \
+ private_mib.h
+lwip_prvmib.o: \
+ ../../../../../../contrib/ports/unix/proj/minimal/lwip_prvmib.c \
+ ../../../../../../contrib/ports/unix/proj/minimal/private_mib.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_structs.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h private_mib.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_msg.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp_asn1.h
+etharp.o: ../../../../../../contrib/../lwip/src/netif/etharp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/snmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/dhcp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/autoip.h \
+ ../../../../../../contrib/../lwip/src/include/netif/etharp.h
+rfcomm.o: \
+ ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/rfcomm.c \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/rfcomm.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/fcs.h
+fcs.o: ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/fcs.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/fcs.h
+hci.o: ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/hci.c \
+ ../../proj/dt/lwbtopts.h phybusif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h
+l2cap.o: \
+ ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/l2cap.c \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h
+lwbt_memp.o: \
+ ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/lwbt_memp.c \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/sdp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/rfcomm.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/ppp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h
+ppp.o: ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/ppp.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/rfcomm.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/ppp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/fcs.h
+sdp.o: ../../../../../../contrib/../lwip/src/netif/lwbt/src/core/sdp.c \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/sdp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h
+uartif.o: uartif.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../proj/dt/lwbtopts.h phybusif.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h
+fs.o: ../../../../../../contrib/apps/httpserver_raw/fs.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/apps/httpserver_raw/fs.h \
+ ../../../../../../contrib/apps/httpserver_raw/fsdata.h \
+ ../../../../../../contrib/apps/httpserver_raw/fsdata.c
+fsdata.o: ../../../../../../contrib/apps/httpserver_raw/fsdata.c \
+ ../../../../../../contrib/apps/httpserver_raw/fsdata.h
+httpd.o: ../../../../../../contrib/apps/httpserver_raw/httpd.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/apps/httpserver_raw/httpd.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/apps/httpserver_raw/fs.h
+bt_ip_dt.o: \
+ ../../../../../../contrib/../lwip/src/netif/lwbt/proj/dt/bt_ip_dt.c \
+ ../../../../../../contrib/../lwip/src/include/lwip/mem.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/opt.h lwipopts.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/debug.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/arch.h \
+ ../../../../../../contrib/ports/unix/include/arch/cc.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/memp_std.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/stats.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/def.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/pbuf.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/err.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/ip_addr.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/udp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/netif.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/inet.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/tcp.h \
+ ../../../../../../contrib/../lwip/src/include/lwip/sys.h \
+ ../../../../../../contrib/../lwip/src/include/ipv4/lwip/icmp.h \
+ phybusif.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/lwbt_memp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/hci.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/bd_addr.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/l2cap.h \
+ ../../proj/dt/lwbtopts.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/sdp.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/rfcomm.h \
+ ../../../../../../contrib/../lwip/src/include/netif/lwbt/ppp.h \
+ ../../../../../../contrib/apps/httpserver_raw/httpd.h

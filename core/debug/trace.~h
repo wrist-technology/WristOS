@@ -1,0 +1,132 @@
+/**
+ * \file trace.h
+ * Header: Trace functions
+ * 
+ * Trace functions for debugging
+ * 
+ * AT91SAM7S-128 USB Mass Storage Device with SD Card by Michael Wolf\n
+ * Copyright (C) 2008 Michael Wolf\n\n
+ * 
+ * This program is free software: you can redistribute it and/or modify\n
+ * it under the terms of the GNU General Public License as published by\n
+ * the Free Software Foundation, either version 3 of the License, or\n
+ * any later version.\n\n
+ * 
+ * This program is distributed in the hope that it will be useful,\n
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of\n
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n
+ * GNU General Public License for more details.\n\n
+ * 
+ * You should have received a copy of the GNU General Public License\n
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n
+ * 
+ */
+#ifndef _TRACE_H
+#define _TRACE_H
+
+#if !defined(NO_TRACES)
+
+#include <peripherals/serial.h>
+#include <screen/font.h>
+#include <utils/rprintf.h> 
+
+/* Enable/Disable tracer levels here */
+//#define TR_SD        //!< Enable trace output for temporary debugging
+
+#define TR_INFO         //!< Enable trace output for informations
+#define TR_WARNING      //!< Enable trace output for warnings
+#define TR_ERROR        //!< Enable trace output for errors
+#define TR_SCR  //screen
+#define TR_FAT          //!< Enable trace output for FAT code
+//#define TR_SD           //!< Enable trace output for SD code
+//#define TR_USB          //!< Enable trace output for USB driver code
+//#define TR_BOT          //!< Enable trace output for Bulk only transfer code
+//#define TR_SBC          //!< Enable trace output for SCSI block command code
+//#define TR_LUN          //!< Enable trace output for LUN code
+
+#endif // !defined(NOTRACES)
+
+//------------------------------------------------------------------------------
+//      Macro
+//------------------------------------------------------------------------------
+
+#if !defined(NOTRACES)
+    #define TRACE_INIT()    void dbg_usart_init(void)         //!< Init debug unit, DBG USART
+#else
+    #define TRACE_INIT(...) //!< trace dummy
+#endif // !defined(NOTRACES)
+
+#if !defined(NOTRACES)
+    #define TRACE_ALL(...)   rprintf(DBG,__VA_ARGS__)       //!< 
+#else
+    #define TRACE_ALL(...) //!< trace dummy
+#endif // !defined(NOTRACES)
+
+
+#if defined(TR_DEBUG)
+    #define TRACE(...)      rprintf(DBG,__VA_ARGS__)        //!< Reroute macro to rprintf
+#else
+    #define TRACE(...)      //!< trace dummy
+#endif // TR_DEBUG
+
+#if defined(TR_SCR)
+    #define TRACE_SCR(...)      rprintf(SCR,__VA_ARGS__)        //!< Reroute macro to rprintf
+#else
+    #define TRACE_SCR(...)      //!< trace dummy
+#endif // TR_DEBUG
+
+#if defined(TR_FAT)
+    #define TRACE_FAT(...)      rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_FAT(...)      //!< trace dummy
+#endif // TR_FAT
+
+#if defined(TR_SD)
+    #define TRACE_SD(...)       rprintf(DBG,__VA_ARGS__)     //!< Reroute macro to rprintf
+#else
+    #define TRACE_SD(...)       //!< trace dummy
+#endif // TR_SD
+
+#if defined(TR_USB)
+    #define TRACE_USB(...)      rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_USB(...)      //!< trace dummy
+#endif // TR_USB
+
+#if defined(TR_BOT)
+    #define TRACE_BOT(...)      rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_BOT(...)      //!< trace dummy
+#endif // TR_BOT
+
+#if defined(TR_SBC)
+    #define TRACE_SBC(...)      rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_SBC(...)      //!< trace dummy
+#endif // TR_SBC
+
+#if defined(TR_LUN)
+    #define TRACE_LUN(...)      rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_LUN(...)      //!< trace dummy
+#endif // TR_LUN
+
+#ifdef TR_INFO
+    #define TRACE_INFO(...)         rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_INFO(...)         //!< trace dummy
+#endif // TR_INFO
+
+#ifdef TR_WARNING
+    #define TRACE_WARNING(...)      rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_WARNING(...)      //!< trace dummy
+#endif // TR_WARNING
+
+#ifdef TR_ERROR
+    #define TRACE_ERROR(...)        rprintf(DBG,__VA_ARGS__)    //!< Reroute macro to rprintf
+#else
+    #define TRACE_ERROR(...)        //!< trace dummy
+#endif // TR_ERROR
+
+#endif // _TRACE_H

@@ -1,0 +1,135 @@
+/**
+ * \file time.c
+ * Timeout functions
+ * 
+ * Timeout functions
+ * 
+ * AT91SAM7S-128 USB Mass Storage Device with SD Card by Michael Wolf\n
+ * Copyright (C) 2008 Michael Wolf\n\n
+ * 
+ * This program is free software: you can redistribute it and/or modify\n
+ * it under the terms of the GNU General Public License as published by\n
+ * the Free Software Foundation, either version 3 of the License, or\n
+ * any later version.\n\n
+ * 
+ * This program is distributed in the hope that it will be useful,\n
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of\n
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n
+ * GNU General Public License for more details.\n\n
+ * 
+ * You should have received a copy of the GNU General Public License\n
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n
+ * 
+ */
+#include "hardware_conf.h"
+#include "firmware_conf.h"
+#include <debug/trace.h>
+#include "macros.h"
+#include "interrupt_utils.h"
+#include "time.h"
+
+//extern AT91PS_AIC  pAIC;                // Interrupt controller
+
+/**
+ * Timer clock rate.
+ * 
+ */ 
+#define TCK  1000
+
+/**
+ * Periodic interval value.
+ * 
+ */
+#define PIV  ((MCK/TCK/16)-1)
+
+/*
+ * with the 18.432 MHz crystal, and current
+ * PLL settings. MCK is 47.923200 MHz
+ * 
+ * approx milisecond tick
+ * actual tick is 1000.066778 Hz
+ * 0.067 % error -> 0.24 second fast per hour, 5.8 seconds in a day
+ * 
+ */
+
+volatile uint32_t timeval; //!< Global counter variable for timeouts.
+
+/**
+ * Timer Interrupt Handler.
+ * 
+ */
+//void  NAKEDFUNC timer_int (void)         /* Timer Interrupt Handler */
+void  timer_int (void)         /* Timer Interrupt Handler */
+{
+	volatile AT91S_PITC * pPIT = AT91C_BASE_PITC;
+  volatile AT91PS_PIO  pPIOA = AT91C_BASE_PIOA;
+  
+	//ISR_ENTRY();
+
+	if (pPIT->PITC_PISR & AT91C_PITC_PITS)	// Check PIT Interrupt 
+	{
+		timeval++;
+    //TRACE_ALL("i"); 
+    
+    if ((timeval&0x1ff)==0) { SET(pPIOA->PIO_CODR, PIN_LED);}
+    if ((timeval&0x3ff)==0) { SET(pPIOA->PIO_SODR, PIN_LED);} 
+    
+    
+		*AT91C_AIC_EOICR = pPIT->PITC_PIVR;     		// send ACK and EOI to PIT
+	} 
+	else 
+	    *AT91C_AIC_EOICR = 0;                   		// send EOI to PIT
+	  
+	//ISR_EXIT();
+}
+
+/**
+ * Init PIT Timer
+ * 
+ * Initialize the PIT timer for use with timeout functions.
+ *  
+*/ 
+void timer_init(void)                    /* Setup PIT with Interrupt */
+{ 
+  AT91PS_AIC  pAIC=AT91C_BASE_AIC;                // Interrupt controller
+	timeval = 0;	//reset
+
+ 
+  
+	*AT91C_PITC_PIMR =	AT91C_PITC_PITIEN |    // PIT Interrupt Enable  
+						AT91C_PITC_PITEN  |    // PIT Enable 
+						PIV;                   // Periodic Interval Value  
+
+    // Disable the interrupt on the interrupt controller
+    SET(pAIC->AIC_IDCR,1<<AT91C_ID_SYS);
+    // Save the interrupt handler routine pointer and the interrupt priority
+    pAIC->AIC_SVR[AT91C_ID_SYS] = (unsigned int) timer_int;
+    // Store the Source Mode Register
+    pAIC->AIC_SMR[AT91C_ID_SYS] = AT91C_AIC_SRCTYPE_INT_POSITIVE_EDGE | AT91C_AIC_PRIOR_HIGHEST;
+    // Clear the interrupt on the interrupt controller
+    SET(pAIC->AIC_ICCR, 1<<AT91C_ID_SYS);
+    // Enable interrupt
+	SET(pAIC->AIC_IECR, 1<<AT91C_ID_SYS);
+}
+
+
+/**
+ * Return the relative system time
+ * 
+ * This function returns the number of system ticks since the last reset.
+ * The tick frequency is 10Hz.
+ * \return System ticks since last reset.
+ * 
+*/
+uint32_t timer_get_timer(void)
+{
+	return timeval;
+}
+
+
+// Dynawa MV  
+
+void vApplicationTickHook( void ) {
+    timeval++;
+}
+

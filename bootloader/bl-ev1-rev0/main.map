@@ -1,0 +1,1517 @@
+Archive member included because of file (symbol)
+
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+                              obj/flash-bl_fat.o (__udivsi3)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+                              obj/flash-bl_fat.o (__divsi3)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+                              obj/flash-bl_fat.o (__umodsi3)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o) (__div0)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+                              obj/flash-bl_fat.o (__ctype_ptr)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+                              obj/flash-bl_fat.o (free)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o) (_malloc_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+                              obj/flash-bl_fat.o (memcpy)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+                              obj/flash-bl_fat.o (memset)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o) (__malloc_lock)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o) (_sbrk_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+                              obj/flash-bl_fat.o (strchr)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+                              obj/flash-bl_fat.o (strcmp)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+                              obj/flash-bl_fat.o (strcpy)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+                              obj/flash-bl_fat.o (strlen)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+                              obj/flash-bl_rprintf.o (strnlen)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o) (_sbrk)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o) (__errno)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o) (__sinit)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o) (_free_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o) (_fwalk)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o) (_impure_ptr)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o) (errno)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o) (__sclose)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o) (_write_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o) (_close_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o) (fclose)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o) (_fflush_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o) (_lseek_r)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o) (_read_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+timeval             0x4               obj/flash-bl_time.o
+scrscrX2            0x2               obj/flash-bl_screen.o
+bytes_per_sector    0x2               obj/flash-bl_fat.o
+num_clusters        0x4               obj/flash-bl_fat.o
+errno               0x4               c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+fontBuf             0x230             obj/flash-bl_font.o
+usb_configuration   0x1               obj/flash-bl_usb_drv.o
+bot_struct          0x4c              obj/flash-bl_usb_bot.o
+scrscrY2            0x2               obj/flash-bl_screen.o
+scrscrY1            0x2               obj/flash-bl_screen.o
+first_dir_sector    0x4               obj/flash-bl_fat.o
+root_dir_cluster    0x4               obj/flash-bl_fat.o
+num_fat_sectors     0x4               obj/flash-bl_fat.o
+sectors_per_cluster
+                    0x2               obj/flash-bl_fat.o
+scrrot              0x2               obj/flash-bl_screen.o
+current_dir_cluster
+                    0x4               obj/flash-bl_fat.o
+scrscrX1            0x2               obj/flash-bl_screen.o
+first_fat_sector    0x4               obj/flash-bl_fat.o
+sd_sectorbuffer     0x200             obj/flash-bl_sdcard.o
+first_data_sector   0x4               obj/flash-bl_fat.o
+usb_epdata          0x6f              obj/flash-bl_usb_drv.o
+root_dir_sectors    0x2               obj/flash-bl_fat.o
+sd_numsectors       0x4               obj/flash-bl_sdcard.o
+usb_setup           0x8               obj/flash-bl_usb_drv.o
+bytes_per_cluster   0x2               obj/flash-bl_fat.o
+scrmirror           0x2               obj/flash-bl_screen.o
+fd_handles          0x10              obj/flash-bl_fat.o
+pLun                0x30              obj/flash-bl_usb_lun.o
+isFAT32             0x1               obj/flash-bl_fat.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 obj/flash-bl_board_cstartup-bl.o
+ .bss           0x00000000        0x0 obj/flash-bl_board_cstartup-bl.o
+ .text          0x00000000        0x0 obj/flash-bl_main.o
+ .text          0x00000000        0x0 obj/flash-bl_board_lowlevel.o
+ .data          0x00000000        0x0 obj/flash-bl_board_lowlevel.o
+ .bss           0x00000000        0x0 obj/flash-bl_board_lowlevel.o
+ .text.pioInit  0x00000000        0x0 obj/flash-bl_board_lowlevel.o
+ .text          0x00000000        0x0 obj/flash-bl_pmc.o
+ .bss           0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_DisableProcessorClock
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .rodata        0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_EnablePeripheral
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_DisablePeripheral
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_EnableAllPeripherals
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_DisableAllPeripherals
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_IsAllPeriphEnabled
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_IsPeriphEnabled
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text.PMC_CPUInIdleMode
+                0x00000000        0x0 obj/flash-bl_pmc.o
+ .text          0x00000000        0x0 obj/flash-bl_fat.o
+ .data          0x00000000        0x0 obj/flash-bl_fat.o
+ .bss           0x00000000        0x0 obj/flash-bl_fat.o
+ .text.readsector
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.cluster2sector
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_nextcluster
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .rodata        0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_init
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.szWildMatch8
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.dos2str  0x00000000        0x0 obj/flash-bl_fat.o
+ .text.ff_scan  0x00000000        0x0 obj/flash-bl_fat.o
+ .text.find_first
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.find_next
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.num_direntries
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.index_to_ff
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_chdir
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_size
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_open
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_fastopen
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_close
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_blockread
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_read
+                0x00000000        0x0 obj/flash-bl_fat.o
+ .text.fat_seek
+                0x00000000        0x0 obj/flash-bl_fat.o
+ COMMON         0x00000000        0x0 obj/flash-bl_fat.o
+ .text          0x00000000        0x0 obj/flash-bl_serial.o
+ .bss           0x00000000        0x0 obj/flash-bl_serial.o
+ .text.dbg_usart_init
+                0x00000000        0x0 obj/flash-bl_serial.o
+ .text          0x00000000        0x0 obj/flash-bl_spi.o
+ .data          0x00000000        0x0 obj/flash-bl_spi.o
+ .bss           0x00000000        0x0 obj/flash-bl_spi.o
+ .text.spi_init
+                0x00000000        0x0 obj/flash-bl_spi.o
+ .text.spi_byte
+                0x00000000        0x0 obj/flash-bl_spi.o
+ .text          0x00000000        0x0 obj/flash-bl_sdcard.o
+ .data          0x00000000        0x0 obj/flash-bl_sdcard.o
+ .bss           0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_card_detect
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_command
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_send_dummys
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_get_response
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_get_datatoken
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_init  0x00000000        0x0 obj/flash-bl_sdcard.o
+ .rodata        0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_info  0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_readsector
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_read_n
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text.sd_writesector
+                0x00000000        0x0 obj/flash-bl_sdcard.o
+ COMMON         0x00000000        0x0 obj/flash-bl_sdcard.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_reset
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_callback
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_get_command_information
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_pre_process_command
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_post_process_command
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_process_command
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_request_handler
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_init
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text.bot_state_machine
+                0x00000000        0x0 obj/flash-bl_usb_bot.o
+ COMMON         0x00000000        0x0 obj/flash-bl_usb_bot.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_power_detect
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.last_set_bit
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_check_bus_status
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_enable_device
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_disable_device
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_soft_disable_device
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_bus_reset_handler
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_end_of_transfer
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_configure_endpoint
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_send_zlp0
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_set_address
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_clear_rx_flag
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_writepayload
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_write
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_getpayload
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_read
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_endpoint_handler
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_stall
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_halt
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text.usb_set_configuration
+                0x00000000        0x0 obj/flash-bl_usb_drv.o
+ COMMON         0x00000000        0x0 obj/flash-bl_usb_drv.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_dsc.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_dsc.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_dsc.o
+ .rodata        0x00000000        0x0 obj/flash-bl_usb_dsc.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .rodata        0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .text.lun_init
+                0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .text.lun_read
+                0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .text.lun_write
+                0x00000000        0x0 obj/flash-bl_usb_lun.o
+ COMMON         0x00000000        0x0 obj/flash-bl_usb_lun.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .rodata        0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_inquiry
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_read_capacity10
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_write10
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_read10
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_mode_sense6
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_request_sense
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_test_unit_ready
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_update_sense_data
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_get_command_information
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text.sbc_process_command
+                0x00000000        0x0 obj/flash-bl_usb_sbc_func.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_std.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_std.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_std.o
+ .text.usb_std_configure_endpoints
+                0x00000000        0x0 obj/flash-bl_usb_std.o
+ .text.usb_std_req_handler
+                0x00000000        0x0 obj/flash-bl_usb_std.o
+ .text          0x00000000        0x0 obj/flash-bl_delay.o
+ .data          0x00000000        0x0 obj/flash-bl_delay.o
+ .bss           0x00000000        0x0 obj/flash-bl_delay.o
+ .text          0x00000000        0x0 obj/flash-bl_rprintf.o
+ .data          0x00000000        0x0 obj/flash-bl_rprintf.o
+ .bss           0x00000000        0x0 obj/flash-bl_rprintf.o
+ .text          0x00000000        0x0 obj/flash-bl_screen.o
+ .data          0x00000000        0x0 obj/flash-bl_screen.o
+ .bss           0x00000000        0x0 obj/flash-bl_screen.o
+ .text.scrInit  0x00000000        0x0 obj/flash-bl_screen.o
+ .text.scrWriteBitmap
+                0x00000000        0x0 obj/flash-bl_screen.o
+ COMMON         0x00000000        0x0 obj/flash-bl_screen.o
+ .text          0x00000000        0x0 obj/flash-bl_oled.o
+ .data          0x00000000        0x0 obj/flash-bl_oled.o
+ .bss           0x00000000        0x0 obj/flash-bl_oled.o
+ .text.oledWrite
+                0x00000000        0x0 obj/flash-bl_oled.o
+ .text.oledInitHw
+                0x00000000        0x0 obj/flash-bl_oled.o
+ .text.oledScreen
+                0x00000000        0x0 obj/flash-bl_oled.o
+ .text          0x00000000        0x0 obj/flash-bl_font.o
+ .data          0x00000000        0x0 obj/flash-bl_font.o
+ .bss           0x00000000        0x0 obj/flash-bl_font.o
+ .rodata        0x00000000        0x0 obj/flash-bl_font.o
+ .text.fontSetCharPos
+                0x00000000        0x0 obj/flash-bl_font.o
+ .text.fontPutChar
+                0x00000000        0x0 obj/flash-bl_font.o
+ COMMON         0x00000000        0x0 obj/flash-bl_font.o
+ .text          0x00000000        0x0 obj/flash-bl_abort.o
+ .data          0x00000000        0x0 obj/flash-bl_abort.o
+ .bss           0x00000000        0x0 obj/flash-bl_abort.o
+ .text.myPAbt_HandlerR
+                0x00000000        0x0 obj/flash-bl_abort.o
+ .text.myDAbt_HandlerR
+                0x00000000        0x0 obj/flash-bl_abort.o
+ .text          0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .data          0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .bss           0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.disableIRQ
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.__get_cpsr
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.__set_cpsr
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.restoreIRQ
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.enableIRQ
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.disableFIQ
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.restoreFIQ
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text.enableFIQ
+                0x00000000        0x0 obj/flash-bl_interrupt_utils.o
+ .text          0x00000000        0x0 obj/flash-bl_usb_irq.o
+ .data          0x00000000        0x0 obj/flash-bl_usb_irq.o
+ .bss           0x00000000        0x0 obj/flash-bl_usb_irq.o
+ .text.usb_irq_service
+                0x00000000        0x0 obj/flash-bl_usb_irq.o
+ .text          0x00000000        0x0 obj/flash-bl_time.o
+ .data          0x00000000        0x0 obj/flash-bl_time.o
+ .bss           0x00000000        0x0 obj/flash-bl_time.o
+ .text.timer_get_timer
+                0x00000000        0x0 obj/flash-bl_time.o
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .rodata        0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .rodata.str1.4
+                0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .rodata        0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ COMMON         0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sram             0x00200000         0x00008000         w !xr
+flash            0x00100000         0x00080000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libm.a
+LOAD obj/flash-bl_board_cstartup-bl.o
+LOAD obj/flash-bl_main.o
+LOAD obj/flash-bl_board_lowlevel.o
+LOAD obj/flash-bl_pmc.o
+LOAD obj/flash-bl_fat.o
+LOAD obj/flash-bl_serial.o
+LOAD obj/flash-bl_spi.o
+LOAD obj/flash-bl_sdcard.o
+LOAD obj/flash-bl_usb_bot.o
+LOAD obj/flash-bl_usb_drv.o
+LOAD obj/flash-bl_usb_dsc.o
+LOAD obj/flash-bl_usb_lun.o
+LOAD obj/flash-bl_usb_sbc_func.o
+LOAD obj/flash-bl_usb_std.o
+LOAD obj/flash-bl_delay.o
+LOAD obj/flash-bl_rprintf.o
+LOAD obj/flash-bl_screen.o
+LOAD obj/flash-bl_oled.o
+LOAD obj/flash-bl_font.o
+LOAD obj/flash-bl_abort.o
+LOAD obj/flash-bl_interrupt_utils.o
+LOAD obj/flash-bl_usb_irq.o
+LOAD obj/flash-bl_time.o
+START GROUP
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libc.a
+END GROUP
+
+.fixed          0x00100000     0x1978
+                0x00100000                . = ALIGN (0x4)
+                0x00100000                _sfixed = .
+ *(.text*)
+ .text          0x00100000       0xa0 obj/flash-bl_board_cstartup-bl.o
+                0x00100000                entry
+ .text.main     0x001000a0      0x364 obj/flash-bl_main.o
+                0x001000a0                main
+ .text.defaultSpuriousHandler
+                0x00100404       0x10 obj/flash-bl_board_lowlevel.o
+                0x00100404                defaultSpuriousHandler
+ .text.defaultFiqHandler
+                0x00100414       0x10 obj/flash-bl_board_lowlevel.o
+                0x00100414                defaultFiqHandler
+ .text.defaultIrqHandler
+                0x00100424       0x10 obj/flash-bl_board_lowlevel.o
+                0x00100424                defaultIrqHandler
+ .text.BOARD_RemapRam
+                0x00100434       0x1c obj/flash-bl_board_lowlevel.o
+                0x00100434                BOARD_RemapRam
+ .text.LowLevelInit
+                0x00100450      0x1f8 obj/flash-bl_board_lowlevel.o
+                0x00100450                LowLevelInit
+ .text.dbg_usart_putchar
+                0x00100648       0x48 obj/flash-bl_serial.o
+                0x00100648                dbg_usart_putchar
+ .text.delay    0x00100690       0xa0 obj/flash-bl_delay.o
+                0x00100690                delay
+ .text.delayms  0x00100730       0x58 obj/flash-bl_delay.o
+                0x00100730                delayms
+ .text.rprintf  0x00100788      0xa30 obj/flash-bl_rprintf.o
+                0x00100788                rprintf
+ .text.scrWriteRect
+                0x001011b8      0x300 obj/flash-bl_screen.o
+                0x001011b8                scrWriteRect
+ .text.oledWriteCommand
+                0x001014b8       0x6c obj/flash-bl_oled.o
+                0x001014b8                oledWriteCommand
+ .text.timer_int
+                0x00101524       0xe0 obj/flash-bl_time.o
+                0x00101524                timer_int
+ .text.timer_init
+                0x00101604       0xa0 obj/flash-bl_time.o
+                0x00101604                timer_init
+ .text          0x001016a4      0x110 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+                0x001016a4                __udivsi3
+                0x001016a4                __aeabi_uidiv
+                0x0010179c                __aeabi_uidivmod
+ .text          0x001017b4       0xcc c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+                0x001017b4                __umodsi3
+ .text          0x00101880        0x4 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+                0x00101880                __aeabi_ldiv0
+                0x00101880                __div0
+                0x00101880                __aeabi_idiv0
+ .text          0x00101884       0x9c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+                0x00101884                strlen
+ .text          0x00101920       0x4c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+                0x00101920                strnlen
+ *(.rodata*)
+ .rodata        0x0010196c        0xc obj/flash-bl_main.o
+                0x00101978                . = ALIGN (0x4)
+                0x00101978                _efixed = .
+
+.glue_7         0x00101978        0x0
+ .glue_7        0x00101978        0x0 obj/flash-bl_board_cstartup-bl.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_main.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_board_lowlevel.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_pmc.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_fat.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_serial.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_spi.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_sdcard.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_bot.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_drv.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_dsc.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_lun.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_sbc_func.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_std.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_delay.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_rprintf.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_screen.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_oled.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_font.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_abort.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_interrupt_utils.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_usb_irq.o
+ .glue_7        0x00101978        0x0 obj/flash-bl_time.o
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .glue_7        0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.glue_7t        0x00101978        0x0
+ .glue_7t       0x00101978        0x0 obj/flash-bl_board_cstartup-bl.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_main.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_board_lowlevel.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_pmc.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_fat.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_serial.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_spi.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_sdcard.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_bot.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_drv.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_dsc.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_lun.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_sbc_func.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_std.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_delay.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_rprintf.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_screen.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_oled.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_font.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_abort.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_interrupt_utils.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_usb_irq.o
+ .glue_7t       0x00101978        0x0 obj/flash-bl_time.o
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .glue_7t       0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.vfp11_veneer   0x00101978        0x0
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_board_cstartup-bl.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_main.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_board_lowlevel.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_pmc.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_fat.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_serial.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_spi.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_sdcard.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_bot.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_drv.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_dsc.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_lun.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_sbc_func.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_std.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_delay.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_rprintf.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_screen.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_oled.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_font.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_abort.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_interrupt_utils.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_usb_irq.o
+ .vfp11_veneer  0x00101978        0x0 obj/flash-bl_time.o
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .vfp11_veneer  0x00101978        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.relocate       0x00200000       0x84 load address 0x00101978
+                0x00200000                . = ALIGN (0x4)
+                0x00200000                _srelocate = .
+ *(.vectors)
+ .vectors       0x00200000       0x70 obj/flash-bl_board_cstartup-bl.o
+ *(.ramfunc)
+ *(.data)
+ .data          0x00200070        0x8 obj/flash-bl_main.o
+                0x00200074                pPIOB
+                0x00200070                pPIOA
+ .data          0x00200078        0x4 obj/flash-bl_pmc.o
+                0x00200078                pPMC
+ .data          0x0020007c        0x8 obj/flash-bl_serial.o
+                0x0020007c                pDBG_USART
+                0x00200080                pDBG_PIO
+                0x00200084                . = ALIGN (0x4)
+                0x00200084                _erelocate = .
+
+.bss            0x00200084        0x8 load address 0x001019fc
+                0x00200084                _szero = .
+ *(.bss)
+ .bss           0x00200084        0x4 obj/flash-bl_main.o
+                0x00200084                scrbuf
+                0x00200088                . = ALIGN (0x4)
+                0x00200088                _ezero = .
+ COMMON         0x00200088        0x4 obj/flash-bl_time.o
+                0x00200088                timeval
+                0x00208000                _sstack = 0x208000
+                0x0020008c                end = .
+OUTPUT(bin/bl-ev1-rev0-btwwev-2-at91sam7se512-flash-bl.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 obj/flash-bl_board_cstartup-bl.o
+ .ARM.attributes
+                0x00000010       0x10 obj/flash-bl_main.o
+ .ARM.attributes
+                0x00000020       0x10 obj/flash-bl_board_lowlevel.o
+ .ARM.attributes
+                0x00000030       0x10 obj/flash-bl_pmc.o
+ .ARM.attributes
+                0x00000040       0x10 obj/flash-bl_fat.o
+ .ARM.attributes
+                0x00000050       0x10 obj/flash-bl_serial.o
+ .ARM.attributes
+                0x00000060       0x10 obj/flash-bl_spi.o
+ .ARM.attributes
+                0x00000070       0x10 obj/flash-bl_sdcard.o
+ .ARM.attributes
+                0x00000080       0x10 obj/flash-bl_usb_bot.o
+ .ARM.attributes
+                0x00000090       0x10 obj/flash-bl_usb_drv.o
+ .ARM.attributes
+                0x000000a0       0x10 obj/flash-bl_usb_dsc.o
+ .ARM.attributes
+                0x000000b0       0x10 obj/flash-bl_usb_lun.o
+ .ARM.attributes
+                0x000000c0       0x10 obj/flash-bl_usb_sbc_func.o
+ .ARM.attributes
+                0x000000d0       0x10 obj/flash-bl_usb_std.o
+ .ARM.attributes
+                0x000000e0       0x10 obj/flash-bl_delay.o
+ .ARM.attributes
+                0x000000f0       0x10 obj/flash-bl_rprintf.o
+ .ARM.attributes
+                0x00000100       0x10 obj/flash-bl_screen.o
+ .ARM.attributes
+                0x00000110       0x10 obj/flash-bl_oled.o
+ .ARM.attributes
+                0x00000120       0x10 obj/flash-bl_font.o
+ .ARM.attributes
+                0x00000130       0x10 obj/flash-bl_abort.o
+ .ARM.attributes
+                0x00000140       0x10 obj/flash-bl_interrupt_utils.o
+ .ARM.attributes
+                0x00000150       0x10 obj/flash-bl_usb_irq.o
+ .ARM.attributes
+                0x00000160       0x10 obj/flash-bl_time.o
+ .ARM.attributes
+                0x00000170       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000180       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000190       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .ARM.attributes
+                0x000001a0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000001b0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x000001c0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .ARM.attributes
+                0x000001d0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x000001e0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000001f0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000200       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000210       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000220       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x00000230       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x00000240       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000250       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000260       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .ARM.attributes
+                0x00000270       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .ARM.attributes
+                0x00000280       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000290       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x000002a0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .ARM.attributes
+                0x000002b0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x000002c0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000002d0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .ARM.attributes
+                0x000002e0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x000002f0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .ARM.attributes
+                0x00000300       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .ARM.attributes
+                0x00000310       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .ARM.attributes
+                0x00000320       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x00000330       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x00000340       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_line     0x00000000     0x3f25
+ .debug_line    0x00000000       0x9d obj/flash-bl_board_cstartup-bl.o
+ .debug_line    0x0000009d       0xf8 obj/flash-bl_main.o
+ .debug_line    0x00000195      0x11e obj/flash-bl_board_lowlevel.o
+ .debug_line    0x000002b3      0x109 obj/flash-bl_pmc.o
+ .debug_line    0x000003bc      0x378 obj/flash-bl_fat.o
+ .debug_line    0x00000734       0x99 obj/flash-bl_serial.o
+ .debug_line    0x000007cd       0xf2 obj/flash-bl_spi.o
+ .debug_line    0x000008bf      0x20e obj/flash-bl_sdcard.o
+ .debug_line    0x00000acd      0x1e0 obj/flash-bl_usb_bot.o
+ .debug_line    0x00000cad      0x3a3 obj/flash-bl_usb_drv.o
+ .debug_line    0x00001050       0x3e obj/flash-bl_usb_dsc.o
+ .debug_line    0x0000108e       0xdf obj/flash-bl_usb_lun.o
+ .debug_line    0x0000116d      0x235 obj/flash-bl_usb_sbc_func.o
+ .debug_line    0x000013a2       0xdb obj/flash-bl_usb_std.o
+ .debug_line    0x0000147d       0x93 obj/flash-bl_delay.o
+ .debug_line    0x00001510      0x14a obj/flash-bl_rprintf.o
+ .debug_line    0x0000165a      0x10a obj/flash-bl_screen.o
+ .debug_line    0x00001764      0x138 obj/flash-bl_oled.o
+ .debug_line    0x0000189c       0xd7 obj/flash-bl_font.o
+ .debug_line    0x00001973       0x51 obj/flash-bl_abort.o
+ .debug_line    0x000019c4       0xda obj/flash-bl_interrupt_utils.o
+ .debug_line    0x00001a9e       0xb4 obj/flash-bl_usb_irq.o
+ .debug_line    0x00001b52       0xe1 obj/flash-bl_time.o
+ .debug_line    0x00001c33       0x96 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_line    0x00001cc9       0xa2 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_line    0x00001d6b       0x7f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_line    0x00001dea       0x6a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00001e54       0x58 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .debug_line    0x00001eac      0x124 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_line    0x00001fd0      0x257 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_line    0x00002227       0xf8 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_line    0x0000231f       0xfd c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_line    0x0000241c      0x11c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .debug_line    0x00002538      0x11f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_line    0x00002657       0x7c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_line    0x000026d3       0x84 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_line    0x00002757       0x81 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_line    0x000027d8       0xc8 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_line    0x000028a0       0xc1 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_line    0x00002961      0x383 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_line    0x00002ce4      0x119 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .debug_line    0x00002dfd      0x238 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_line    0x00003035      0x1ac c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_line    0x000031e1      0x188 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_line    0x00003369      0x10a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .debug_line    0x00003473      0x14f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_line    0x000035c2      0x193 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_line    0x00003755      0x120 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_line    0x00003875      0x120 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_line    0x00003995      0x187 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_line    0x00003b1c      0x1ca c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_line    0x00003ce6      0x120 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_line    0x00003e06      0x11f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_info     0x00000000    0x153e9
+ .debug_info    0x00000000       0x6d obj/flash-bl_board_cstartup-bl.o
+ .debug_info    0x0000006d      0x552 obj/flash-bl_main.o
+ .debug_info    0x000005bf      0x888 obj/flash-bl_board_lowlevel.o
+ .debug_info    0x00000e47      0x311 obj/flash-bl_pmc.o
+ .debug_info    0x00001158     0x100d obj/flash-bl_fat.o
+ .debug_info    0x00002165      0x509 obj/flash-bl_serial.o
+ .debug_info    0x0000266e      0x6a9 obj/flash-bl_spi.o
+ .debug_info    0x00002d17      0x509 obj/flash-bl_sdcard.o
+ .debug_info    0x00003220      0xa8f obj/flash-bl_usb_bot.o
+ .debug_info    0x00003caf      0xe36 obj/flash-bl_usb_drv.o
+ .debug_info    0x00004ae5      0x561 obj/flash-bl_usb_dsc.o
+ .debug_info    0x00005046      0x6e1 obj/flash-bl_usb_lun.o
+ .debug_info    0x00005727     0x1076 obj/flash-bl_usb_sbc_func.o
+ .debug_info    0x0000679d      0x3ed obj/flash-bl_usb_std.o
+ .debug_info    0x00006b8a       0xc8 obj/flash-bl_delay.o
+ .debug_info    0x00006c52      0x206 obj/flash-bl_rprintf.o
+ .debug_info    0x00006e58      0x343 obj/flash-bl_screen.o
+ .debug_info    0x0000719b      0x661 obj/flash-bl_oled.o
+ .debug_info    0x000077fc      0x23a obj/flash-bl_font.o
+ .debug_info    0x00007a36       0xb6 obj/flash-bl_abort.o
+ .debug_info    0x00007aec      0x1aa obj/flash-bl_interrupt_utils.o
+ .debug_info    0x00007c96      0x3dc obj/flash-bl_usb_irq.o
+ .debug_info    0x00008072      0x568 obj/flash-bl_time.o
+ .debug_info    0x000085da       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_info    0x0000866c       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_info    0x000086fe       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_info    0x00008790       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00008822       0x75 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .debug_info    0x00008897      0x96a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_info    0x00009201      0xcca c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_info    0x00009ecb      0x10e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_info    0x00009fd9      0x113 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_info    0x0000a0ec      0x953 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .debug_info    0x0000aa3f      0x962 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_info    0x0000b3a1      0x114 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_info    0x0000b4b5       0xdb c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_info    0x0000b590      0x10e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_info    0x0000b69e       0xd7 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_info    0x0000b775       0xc9 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_info    0x0000b83e     0x186e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_info    0x0000d0ac      0x92a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .debug_info    0x0000d9d6      0xc04 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_info    0x0000e5da      0xbbf c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_info    0x0000f199      0xae1 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_info    0x0000fc7a      0x939 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .debug_info    0x000105b3      0xa1c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_info    0x00010fcf      0xaaa c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_info    0x00011a79      0x991 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_info    0x0001240a      0x956 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_info    0x00012d60      0x98e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_info    0x000136ee      0x9f2 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_info    0x000140e0      0x97f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_info    0x00014a5f      0x98a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_abbrev   0x00000000     0x3f3b
+ .debug_abbrev  0x00000000       0x12 obj/flash-bl_board_cstartup-bl.o
+ .debug_abbrev  0x00000012       0xe8 obj/flash-bl_main.o
+ .debug_abbrev  0x000000fa       0xdf obj/flash-bl_board_lowlevel.o
+ .debug_abbrev  0x000001d9       0xfe obj/flash-bl_pmc.o
+ .debug_abbrev  0x000002d7      0x223 obj/flash-bl_fat.o
+ .debug_abbrev  0x000004fa       0xdd obj/flash-bl_serial.o
+ .debug_abbrev  0x000005d7      0x10c obj/flash-bl_spi.o
+ .debug_abbrev  0x000006e3      0x190 obj/flash-bl_sdcard.o
+ .debug_abbrev  0x00000873      0x200 obj/flash-bl_usb_bot.o
+ .debug_abbrev  0x00000a73      0x24d obj/flash-bl_usb_drv.o
+ .debug_abbrev  0x00000cc0       0x8f obj/flash-bl_usb_dsc.o
+ .debug_abbrev  0x00000d4f      0x15f obj/flash-bl_usb_lun.o
+ .debug_abbrev  0x00000eae      0x1da obj/flash-bl_usb_sbc_func.o
+ .debug_abbrev  0x00001088       0xf5 obj/flash-bl_usb_std.o
+ .debug_abbrev  0x0000117d       0x7d obj/flash-bl_delay.o
+ .debug_abbrev  0x000011fa       0xfa obj/flash-bl_rprintf.o
+ .debug_abbrev  0x000012f4       0xde obj/flash-bl_screen.o
+ .debug_abbrev  0x000013d2      0x110 obj/flash-bl_oled.o
+ .debug_abbrev  0x000014e2       0xb9 obj/flash-bl_font.o
+ .debug_abbrev  0x0000159b       0x79 obj/flash-bl_abort.o
+ .debug_abbrev  0x00001614       0xaa obj/flash-bl_interrupt_utils.o
+ .debug_abbrev  0x000016be       0xde obj/flash-bl_usb_irq.o
+ .debug_abbrev  0x0000179c       0xfb obj/flash-bl_time.o
+ .debug_abbrev  0x00001897       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000018ab       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_abbrev  0x000018bf       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_abbrev  0x000018d3       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x000018e7       0x5b c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .debug_abbrev  0x00001942      0x190 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_abbrev  0x00001ad2      0x22e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_abbrev  0x00001d00       0x99 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_abbrev  0x00001d99       0xb2 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_abbrev  0x00001e4b      0x173 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .debug_abbrev  0x00001fbe      0x197 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x00002155       0x98 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_abbrev  0x000021ed       0x7a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00002267       0x98 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_abbrev  0x000022ff       0x94 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_abbrev  0x00002393       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_abbrev  0x00002425      0x450 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_abbrev  0x00002875      0x168 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .debug_abbrev  0x000029dd      0x2b3 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_abbrev  0x00002c90      0x200 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_abbrev  0x00002e90      0x1ee c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_abbrev  0x0000307e      0x160 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .debug_abbrev  0x000031de      0x1f2 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_abbrev  0x000033d0      0x1c3 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_abbrev  0x00003593      0x18d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_abbrev  0x00003720      0x188 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_abbrev  0x000038a8      0x1b0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_abbrev  0x00003a58      0x1c4 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_abbrev  0x00003c1c      0x197 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_abbrev  0x00003db3      0x188 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_aranges  0x00000000      0x950
+ .debug_aranges
+                0x00000000       0x28 obj/flash-bl_board_cstartup-bl.o
+ .debug_aranges
+                0x00000028       0x20 obj/flash-bl_main.o
+ .debug_aranges
+                0x00000048       0x48 obj/flash-bl_board_lowlevel.o
+ .debug_aranges
+                0x00000090       0x58 obj/flash-bl_pmc.o
+ .debug_aranges
+                0x000000e8       0xb0 obj/flash-bl_fat.o
+ .debug_aranges
+                0x00000198       0x28 obj/flash-bl_serial.o
+ .debug_aranges
+                0x000001c0       0x28 obj/flash-bl_spi.o
+ .debug_aranges
+                0x000001e8       0x68 obj/flash-bl_sdcard.o
+ .debug_aranges
+                0x00000250       0x60 obj/flash-bl_usb_bot.o
+ .debug_aranges
+                0x000002b0       0xb8 obj/flash-bl_usb_drv.o
+ .debug_aranges
+                0x00000368       0x30 obj/flash-bl_usb_lun.o
+ .debug_aranges
+                0x00000398       0x68 obj/flash-bl_usb_sbc_func.o
+ .debug_aranges
+                0x00000400       0x28 obj/flash-bl_usb_std.o
+ .debug_aranges
+                0x00000428       0x28 obj/flash-bl_delay.o
+ .debug_aranges
+                0x00000450       0x20 obj/flash-bl_rprintf.o
+ .debug_aranges
+                0x00000470       0x30 obj/flash-bl_screen.o
+ .debug_aranges
+                0x000004a0       0x38 obj/flash-bl_oled.o
+ .debug_aranges
+                0x000004d8       0x28 obj/flash-bl_font.o
+ .debug_aranges
+                0x00000500       0x28 obj/flash-bl_abort.o
+ .debug_aranges
+                0x00000528       0x58 obj/flash-bl_interrupt_utils.o
+ .debug_aranges
+                0x00000580       0x20 obj/flash-bl_usb_irq.o
+ .debug_aranges
+                0x000005a0       0x30 obj/flash-bl_time.o
+ .debug_aranges
+                0x000005d0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x000005f0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x00000610       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_aranges
+                0x00000630       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x00000650       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_aranges
+                0x00000670       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_aranges
+                0x00000690       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x000006b0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_aranges
+                0x000006d0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .debug_aranges
+                0x000006f0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_aranges
+                0x00000710       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_aranges
+                0x00000730       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_aranges
+                0x00000750       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_aranges
+                0x00000770       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000790       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_aranges
+                0x000007b0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_aranges
+                0x000007d0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .debug_aranges
+                0x000007f0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_aranges
+                0x00000810       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_aranges
+                0x00000830       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_aranges
+                0x00000850       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_aranges
+                0x00000870       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_aranges
+                0x00000890       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_aranges
+                0x000008b0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_aranges
+                0x000008d0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_aranges
+                0x000008f0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_aranges
+                0x00000910       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_aranges
+                0x00000930       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_ranges   0x00000000      0x8c8
+ .debug_ranges  0x00000000       0x20 obj/flash-bl_board_cstartup-bl.o
+ .debug_ranges  0x00000020       0x18 obj/flash-bl_main.o
+ .debug_ranges  0x00000038       0x40 obj/flash-bl_board_lowlevel.o
+ .debug_ranges  0x00000078       0x50 obj/flash-bl_pmc.o
+ .debug_ranges  0x000000c8       0xa8 obj/flash-bl_fat.o
+ .debug_ranges  0x00000170       0x20 obj/flash-bl_serial.o
+ .debug_ranges  0x00000190       0x20 obj/flash-bl_spi.o
+ .debug_ranges  0x000001b0       0x60 obj/flash-bl_sdcard.o
+ .debug_ranges  0x00000210       0x58 obj/flash-bl_usb_bot.o
+ .debug_ranges  0x00000268       0xb0 obj/flash-bl_usb_drv.o
+ .debug_ranges  0x00000318       0x28 obj/flash-bl_usb_lun.o
+ .debug_ranges  0x00000340       0x60 obj/flash-bl_usb_sbc_func.o
+ .debug_ranges  0x000003a0       0x20 obj/flash-bl_usb_std.o
+ .debug_ranges  0x000003c0       0x20 obj/flash-bl_delay.o
+ .debug_ranges  0x000003e0       0x18 obj/flash-bl_rprintf.o
+ .debug_ranges  0x000003f8       0x28 obj/flash-bl_screen.o
+ .debug_ranges  0x00000420       0x30 obj/flash-bl_oled.o
+ .debug_ranges  0x00000450       0x20 obj/flash-bl_font.o
+ .debug_ranges  0x00000470       0x20 obj/flash-bl_abort.o
+ .debug_ranges  0x00000490       0x50 obj/flash-bl_interrupt_utils.o
+ .debug_ranges  0x000004e0       0x18 obj/flash-bl_usb_irq.o
+ .debug_ranges  0x000004f8       0x28 obj/flash-bl_time.o
+ .debug_ranges  0x00000520       0x58 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_ranges  0x00000578      0x258 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_ranges  0x000007d0       0x80 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_ranges  0x00000850       0x40 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_ranges  0x00000890       0x38 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+
+.debug_frame    0x00000000     0x192c
+ .debug_frame   0x00000000       0x30 obj/flash-bl_main.o
+ .debug_frame   0x00000030       0xd0 obj/flash-bl_board_lowlevel.o
+ .debug_frame   0x00000100      0x110 obj/flash-bl_pmc.o
+ .debug_frame   0x00000210      0x274 obj/flash-bl_fat.o
+ .debug_frame   0x00000484       0x50 obj/flash-bl_serial.o
+ .debug_frame   0x000004d4       0x50 obj/flash-bl_spi.o
+ .debug_frame   0x00000524      0x150 obj/flash-bl_sdcard.o
+ .debug_frame   0x00000674      0x130 obj/flash-bl_usb_bot.o
+ .debug_frame   0x000007a4      0x294 obj/flash-bl_usb_drv.o
+ .debug_frame   0x00000a38       0x70 obj/flash-bl_usb_lun.o
+ .debug_frame   0x00000aa8      0x150 obj/flash-bl_usb_sbc_func.o
+ .debug_frame   0x00000bf8       0x50 obj/flash-bl_usb_std.o
+ .debug_frame   0x00000c48       0x50 obj/flash-bl_delay.o
+ .debug_frame   0x00000c98       0x34 obj/flash-bl_rprintf.o
+ .debug_frame   0x00000ccc       0x70 obj/flash-bl_screen.o
+ .debug_frame   0x00000d3c       0x90 obj/flash-bl_oled.o
+ .debug_frame   0x00000dcc       0x50 obj/flash-bl_font.o
+ .debug_frame   0x00000e1c       0x50 obj/flash-bl_abort.o
+ .debug_frame   0x00000e6c      0x110 obj/flash-bl_interrupt_utils.o
+ .debug_frame   0x00000f7c       0x30 obj/flash-bl_usb_irq.o
+ .debug_frame   0x00000fac       0x70 obj/flash-bl_time.o
+ .debug_frame   0x0000101c       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001044       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_frame   0x0000106c       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_frame   0x00001094       0x30 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_frame   0x000010c4       0x38 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x000010fc       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_frame   0x00001128       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_frame   0x00001150       0x30 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .debug_frame   0x00001180       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x000011ac       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_frame   0x000011d4       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_frame   0x000011f4       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_frame   0x0000121c       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_frame   0x0000123c       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_frame   0x0000125c      0x2f8 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_frame   0x00001554       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .debug_frame   0x00001574      0x10c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_frame   0x00001680       0x50 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_frame   0x000016d0       0x58 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_frame   0x00001728       0x68 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_frame   0x00001790       0x70 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_frame   0x00001800       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_frame   0x0000182c       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_frame   0x00001858       0x3c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_frame   0x00001894       0x40 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_frame   0x000018d4       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_frame   0x00001900       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_loc      0x00000000     0x369c
+ .debug_loc     0x00000000       0x2a obj/flash-bl_main.o
+ .debug_loc     0x0000002a       0xfc obj/flash-bl_board_lowlevel.o
+ .debug_loc     0x00000126      0x150 obj/flash-bl_pmc.o
+ .debug_loc     0x00000276      0x31e obj/flash-bl_fat.o
+ .debug_loc     0x00000594       0x54 obj/flash-bl_serial.o
+ .debug_loc     0x000005e8       0x54 obj/flash-bl_spi.o
+ .debug_loc     0x0000063c      0x1a4 obj/flash-bl_sdcard.o
+ .debug_loc     0x000007e0      0x17a obj/flash-bl_usb_bot.o
+ .debug_loc     0x0000095a      0x348 obj/flash-bl_usb_drv.o
+ .debug_loc     0x00000ca2       0x7e obj/flash-bl_usb_lun.o
+ .debug_loc     0x00000d20      0x1a4 obj/flash-bl_usb_sbc_func.o
+ .debug_loc     0x00000ec4       0x54 obj/flash-bl_usb_std.o
+ .debug_loc     0x00000f18       0x54 obj/flash-bl_delay.o
+ .debug_loc     0x00000f6c       0x2a obj/flash-bl_rprintf.o
+ .debug_loc     0x00000f96       0x7e obj/flash-bl_screen.o
+ .debug_loc     0x00001014       0xa8 obj/flash-bl_oled.o
+ .debug_loc     0x000010bc       0x54 obj/flash-bl_font.o
+ .debug_loc     0x00001110       0x54 obj/flash-bl_abort.o
+ .debug_loc     0x00001164      0x150 obj/flash-bl_interrupt_utils.o
+ .debug_loc     0x000012b4       0x2a obj/flash-bl_usb_irq.o
+ .debug_loc     0x000012de       0x7e obj/flash-bl_time.o
+ .debug_loc     0x0000135c       0x3c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_loc     0x00001398      0x75d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_loc     0x00001af5      0x130 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_loc     0x00001c25      0x12b c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_loc     0x00001d50       0x63 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_loc     0x00001db3       0xd3 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_loc     0x00001e86       0xba c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_loc     0x00001f40       0xaa c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_loc     0x00001fea       0x47 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_loc     0x00002031       0x4a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_loc     0x0000207b      0x9f0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_loc     0x00002a6b      0x1a7 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_loc     0x00002c12      0x2ab c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_loc     0x00002ebd       0xc1 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_loc     0x00002f7e      0x187 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_loc     0x00003105      0x1cf c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_loc     0x000032d4       0x89 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_loc     0x0000335d       0x63 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_loc     0x000033c0       0x79 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_loc     0x00003439      0x151 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_loc     0x0000358a       0x89 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_loc     0x00003613       0x89 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_pubnames
+                0x00000000     0x12e0
+ .debug_pubnames
+                0x00000000       0x3a obj/flash-bl_main.o
+ .debug_pubnames
+                0x0000003a       0x89 obj/flash-bl_board_lowlevel.o
+ .debug_pubnames
+                0x000000c3       0xf0 obj/flash-bl_pmc.o
+ .debug_pubnames
+                0x000001b3      0x1e3 obj/flash-bl_fat.o
+ .debug_pubnames
+                0x00000396       0x57 obj/flash-bl_serial.o
+ .debug_pubnames
+                0x000003ed       0x42 obj/flash-bl_spi.o
+ .debug_pubnames
+                0x0000042f       0xfd obj/flash-bl_sdcard.o
+ .debug_pubnames
+                0x0000052c       0x84 obj/flash-bl_usb_bot.o
+ .debug_pubnames
+                0x000005b0      0x1f6 obj/flash-bl_usb_drv.o
+ .debug_pubnames
+                0x000007a6       0xc7 obj/flash-bl_usb_dsc.o
+ .debug_pubnames
+                0x0000086d       0x43 obj/flash-bl_usb_lun.o
+ .debug_pubnames
+                0x000008b0       0x64 obj/flash-bl_usb_sbc_func.o
+ .debug_pubnames
+                0x00000914       0x2a obj/flash-bl_usb_std.o
+ .debug_pubnames
+                0x0000093e       0x28 obj/flash-bl_delay.o
+ .debug_pubnames
+                0x00000966       0x1e obj/flash-bl_rprintf.o
+ .debug_pubnames
+                0x00000984       0x8f obj/flash-bl_screen.o
+ .debug_pubnames
+                0x00000a13       0x53 obj/flash-bl_oled.o
+ .debug_pubnames
+                0x00000a66       0xcd obj/flash-bl_font.o
+ .debug_pubnames
+                0x00000b33       0x3a obj/flash-bl_abort.o
+ .debug_pubnames
+                0x00000b6d       0x6a obj/flash-bl_interrupt_utils.o
+ .debug_pubnames
+                0x00000bd7       0x26 obj/flash-bl_usb_irq.o
+ .debug_pubnames
+                0x00000bfd       0x4f obj/flash-bl_time.o
+ .debug_pubnames
+                0x00000c4c       0x2e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .debug_pubnames
+                0x00000c7a       0x26 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .debug_pubnames
+                0x00000ca0       0xce c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .debug_pubnames
+                0x00000d6e       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x00000d8b       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .debug_pubnames
+                0x00000da8       0x38 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .debug_pubnames
+                0x00000de0       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_pubnames
+                0x00000dfe       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .debug_pubnames
+                0x00000e1b       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .debug_pubnames
+                0x00000e38       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .debug_pubnames
+                0x00000e55       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x00000e72       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_pubnames
+                0x00000e90      0x158 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .debug_pubnames
+                0x00000fe8       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .debug_pubnames
+                0x00001006       0xdb c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .debug_pubnames
+                0x000010e1       0x31 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .debug_pubnames
+                0x00001112       0x2e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .debug_pubnames
+                0x00001140       0x39 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .debug_pubnames
+                0x00001179       0x52 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .debug_pubnames
+                0x000011cb       0x44 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .debug_pubnames
+                0x0000120f       0x1f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .debug_pubnames
+                0x0000122e       0x1f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .debug_pubnames
+                0x0000124d       0x2b c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .debug_pubnames
+                0x00001278       0x2b c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .debug_pubnames
+                0x000012a3       0x1f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .debug_pubnames
+                0x000012c2       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+
+.debug_str      0x00000000     0x36a6
+ .debug_str     0x00000000      0x28c obj/flash-bl_main.o
+                                0x2ed (size before relaxing)
+ .debug_str     0x0000028c      0x257 obj/flash-bl_board_lowlevel.o
+                                0x489 (size before relaxing)
+ .debug_str     0x000004e3       0xce obj/flash-bl_pmc.o
+                                0x256 (size before relaxing)
+ .debug_str     0x000005b1      0x6b1 obj/flash-bl_fat.o
+                                0x7c8 (size before relaxing)
+ .debug_str     0x00000c62      0x133 obj/flash-bl_serial.o
+                                0x33b (size before relaxing)
+ .debug_str     0x00000d95       0xe6 obj/flash-bl_spi.o
+                                0x3a0 (size before relaxing)
+ .debug_str     0x00000e7b      0x196 obj/flash-bl_sdcard.o
+                                0x292 (size before relaxing)
+ .debug_str     0x00001011      0x628 obj/flash-bl_usb_bot.o
+                                0x6ed (size before relaxing)
+ .debug_str     0x00001639      0x323 obj/flash-bl_usb_drv.o
+                                0x74b (size before relaxing)
+ .debug_str     0x0000195c      0x36c obj/flash-bl_usb_dsc.o
+                                0x435 (size before relaxing)
+ .debug_str     0x00001cc8       0x65 obj/flash-bl_usb_lun.o
+                                0x4f5 (size before relaxing)
+ .debug_str     0x00001d2d      0x30a obj/flash-bl_usb_sbc_func.o
+                                0x8ec (size before relaxing)
+ .debug_str     0x00002037       0x41 obj/flash-bl_usb_std.o
+                                0x34e (size before relaxing)
+ .debug_str     0x00002078       0x1f obj/flash-bl_delay.o
+                                 0xdd (size before relaxing)
+ .debug_str     0x00002097       0x76 obj/flash-bl_rprintf.o
+                                0x15b (size before relaxing)
+ .debug_str     0x0000210d      0x102 obj/flash-bl_screen.o
+                                0x1e2 (size before relaxing)
+ .debug_str     0x0000220f       0x8d obj/flash-bl_oled.o
+                                0x3a4 (size before relaxing)
+ .debug_str     0x0000229c       0xac obj/flash-bl_font.o
+                                0x19f (size before relaxing)
+ .debug_str     0x00002348       0x39 obj/flash-bl_abort.o
+                                 0xee (size before relaxing)
+ .debug_str     0x00002381       0x80 obj/flash-bl_interrupt_utils.o
+                                 0xd6 (size before relaxing)
+ .debug_str     0x00002401       0xa1 obj/flash-bl_usb_irq.o
+                                0x2bf (size before relaxing)
+ .debug_str     0x000024a2       0x3a obj/flash-bl_time.o
+                                0x348 (size before relaxing)
+ .debug_str     0x000024dc       0x80 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+                                 0x9d (size before relaxing)
+ .debug_str     0x0000255c      0x39f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+                                0x4cf (size before relaxing)
+ .debug_str     0x000028fb      0x200 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+                                0x6a4 (size before relaxing)
+ .debug_str     0x00002afb       0xa8 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+                                 0xdb (size before relaxing)
+ .debug_str     0x00002ba3       0x4d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+                                0x131 (size before relaxing)
+ .debug_str     0x00002bf0       0x6b c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+                                0x4d6 (size before relaxing)
+ .debug_str     0x00002c5b       0x8e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+                                0x4be (size before relaxing)
+ .debug_str     0x00002ce9       0x40 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+                                0x128 (size before relaxing)
+ .debug_str     0x00002d29       0x40 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+                                0x116 (size before relaxing)
+ .debug_str     0x00002d69       0x40 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+                                0x138 (size before relaxing)
+ .debug_str     0x00002da9       0x46 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+                                0x130 (size before relaxing)
+ .debug_str     0x00002def       0x42 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+                                0x125 (size before relaxing)
+ .debug_str     0x00002e31      0x34d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+                                0x7f2 (size before relaxing)
+ .debug_str     0x0000317e       0x7f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+                                0x4b5 (size before relaxing)
+ .debug_str     0x000031fd      0x153 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+                                0x5a7 (size before relaxing)
+ .debug_str     0x00003350       0x3c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+                                0x5f6 (size before relaxing)
+ .debug_str     0x0000338c       0x5c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+                                0x4e8 (size before relaxing)
+ .debug_str     0x000033e8       0x44 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+                                0x4cd (size before relaxing)
+ .debug_str     0x0000342c       0x71 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+                                0x4f2 (size before relaxing)
+ .debug_str     0x0000349d       0x60 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+                                0x4e4 (size before relaxing)
+ .debug_str     0x000034fd       0x4a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+                                0x4c1 (size before relaxing)
+ .debug_str     0x00003547       0x41 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+                                0x4b1 (size before relaxing)
+ .debug_str     0x00003588       0x4e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+                                0x4c9 (size before relaxing)
+ .debug_str     0x000035d6       0x50 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+                                0x4e5 (size before relaxing)
+ .debug_str     0x00003626       0x41 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+                                0x4bf (size before relaxing)
+ .debug_str     0x00003667       0x3f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)
+                                0x4bf (size before relaxing)
+
+.comment        0x00000000      0x360
+ .comment       0x00000000       0x12 obj/flash-bl_main.o
+ .comment       0x00000012       0x12 obj/flash-bl_board_lowlevel.o
+ .comment       0x00000024       0x12 obj/flash-bl_pmc.o
+ .comment       0x00000036       0x12 obj/flash-bl_fat.o
+ .comment       0x00000048       0x12 obj/flash-bl_serial.o
+ .comment       0x0000005a       0x12 obj/flash-bl_spi.o
+ .comment       0x0000006c       0x12 obj/flash-bl_sdcard.o
+ .comment       0x0000007e       0x12 obj/flash-bl_usb_bot.o
+ .comment       0x00000090       0x12 obj/flash-bl_usb_drv.o
+ .comment       0x000000a2       0x12 obj/flash-bl_usb_dsc.o
+ .comment       0x000000b4       0x12 obj/flash-bl_usb_lun.o
+ .comment       0x000000c6       0x12 obj/flash-bl_usb_sbc_func.o
+ .comment       0x000000d8       0x12 obj/flash-bl_usb_std.o
+ .comment       0x000000ea       0x12 obj/flash-bl_delay.o
+ .comment       0x000000fc       0x12 obj/flash-bl_rprintf.o
+ .comment       0x0000010e       0x12 obj/flash-bl_screen.o
+ .comment       0x00000120       0x12 obj/flash-bl_oled.o
+ .comment       0x00000132       0x12 obj/flash-bl_font.o
+ .comment       0x00000144       0x12 obj/flash-bl_abort.o
+ .comment       0x00000156       0x12 obj/flash-bl_interrupt_utils.o
+ .comment       0x00000168       0x12 obj/flash-bl_usb_irq.o
+ .comment       0x0000017a       0x12 obj/flash-bl_time.o
+ .comment       0x0000018c       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-ctype_.o)
+ .comment       0x0000019e       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-malloc.o)
+ .comment       0x000001b0       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mallocr.o)
+ .comment       0x000001c2       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .comment       0x000001d4       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memset.o)
+ .comment       0x000001e6       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-mlock.o)
+ .comment       0x000001f8       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-sbrkr.o)
+ .comment       0x0000020a       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strchr.o)
+ .comment       0x0000021c       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcmp.o)
+ .comment       0x0000022e       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strcpy.o)
+ .comment       0x00000240       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .comment       0x00000252       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .comment       0x00000264       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-syscalls.o)
+ .comment       0x00000276       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-errno.o)
+ .comment       0x00000288       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-findfp.o)
+ .comment       0x0000029a       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-freer.o)
+ .comment       0x000002ac       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fwalk.o)
+ .comment       0x000002be       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-impure.o)
+ .comment       0x000002d0       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-reent.o)
+ .comment       0x000002e2       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-stdio.o)
+ .comment       0x000002f4       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-writer.o)
+ .comment       0x00000306       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-closer.o)
+ .comment       0x00000318       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fclose.o)
+ .comment       0x0000032a       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-fflush.o)
+ .comment       0x0000033c       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-lseekr.o)
+ .comment       0x0000034e       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-readr.o)

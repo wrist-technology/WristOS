@@ -1,0 +1,259 @@
+/* ========================================================================== */
+/*                                                                            */
+/*   screen.c                                                               */
+/*   (c) 2009 Wrist Technology Ltd                                                          */
+/*                                                                            */
+/*   Description                                                              */
+/*                                                                            */
+/* ========================================================================== */
+
+
+/**
+ *  Screen driver
+ *
+ *
+ *   
+*/
+
+#include <stdio.h>
+#include "hardware_conf.h"
+#include "firmware_conf.h"
+#include <screen/screen.h>
+#include <debug/trace.h>
+#include <utils/delay.h>
+
+#include "lcd_lm6029.h"
+
+
+
+
+
+
+scr_coord_t scrscrX1;
+scr_coord_t scrscrX2;
+scr_coord_t scrscrY1;
+scr_coord_t scrscrY2;
+uint16_t scrrot, scrmirror;
+
+//scr buffer, allocate mem!
+extern scr_buf_t * scrbuf; 
+
+//note: requires the SMC pins (AD0.., D0..D15, R/W) already configured!
+int scrInit(void)
+{
+   writeLCD(LCDI_RESET,1);
+  delay(1500);
+  writeLCD(LCDI_BIAS_19  ,1);
+  writeLCD(LCDI_ADCSEL_NORM,1);
+  writeLCD(LCDI_SHL_FLIP ,1);
+  
+  //2 byte cmd;
+  writeLCD(LCDI_BOOSTMODE, 1);
+  writeLCD(0, 1);
+  //contrast
+  writeLCD(LCDI_VOLUME, 1);
+  writeLCD(40, 1);
+  
+  writeLCD(LCDI_VREG|(LCDI_VREG_M&0x4),1);
+   
+  writeLCD(LCDI_STARTLINE ,1);//0
+  writeLCD(LCDI_DISP_NORM,1);
+  writeLCD(LCDI_ENTIRE_OFF,1);
+  writeLCD(LCDI_PWRCTRL| (LCDI_PWRCTRL_M&0x7) ,1);
+  
+  writeLCD(LCDI_SETPAGE,1);
+  writeLCD(LCDI_SETCOLH,1);
+  writeLCD(LCDI_SETCOLL,1);
+  
+  writeLCD( LCDI_DISPON,1);
+  //-----------------------
+  
+  writeLCD(LCDI_ENTIRE_OFF,1);
+  
+  return 0;
+}
+
+void scrWriteRect(scr_coord_t left_x, scr_coord_t top_y, scr_coord_t right_x, scr_coord_t bot_y, scr_color_t color)
+{
+  uint8_t col, sfrac, efrac, mask, mask2,i, epage, spage, spage8;
+  scr_coord_t x1,x2,y1,y2;
+  //if ((x1>=128)||(y1>=64)||(x2>=128)||(y2>=64)) return;
+  
+  if (left_x>=0) x1 = left_x; else x1=0; if (left_x<SCR_RESOLUTION_X) x1 = left_x; else x1=SCR_RESOLUTION_X-1;
+  if (right_x>=0) x2 = right_x; else x2=0; if (right_x<SCR_RESOLUTION_X) x2 = right_x; else x2=SCR_RESOLUTION_X-1;
+  if (top_y>=0) y1 = top_y; else y1=0; if (top_y<SCR_RESOLUTION_Y) y1 = top_y; else y1=SCR_RESOLUTION_Y-1;
+  if (bot_y>=0) y2 = bot_y; else y2=0; if (bot_y<SCR_RESOLUTION_Y) y2 = bot_y; else y2=SCR_RESOLUTION_Y-1;
+    
+  spage = y1>>3; spage8=spage;
+  epage = (y2+1)>>3;
+  sfrac = y1&0x7;
+  efrac = (y2+1)&0x7;
+  
+  
+  
+  if ((sfrac)||((efrac)&&(epage==spage)))
+  {
+     //read-modify-write access:     
+     mask=0;
+     for (i=0;i<sfrac;i++) { mask<<=1; mask|=1; }
+     mask2=0;
+     if ((efrac)&&(epage==spage))
+     {
+       mask2=0xfe;
+       for (i=1;i<efrac;i++) { mask2<<=1; mask2&=0xFE; }
+     }
+     mask|=mask2;
+     writeLCD(LCDI_RMW,1);
+     writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+     writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+     writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&(y1>>3)),1);
+     for (col=x1;col<=x2;col++)
+     {
+       readLCD();//dummy?
+       writeLCD((readLCD()&mask)|((~mask)&(~color)),0);
+     }
+     writeLCD(LCDI_RMWEND,1);  
+     
+     spage8++; //this page was partially filled.
+  }
+  
+  if ((efrac)&&(epage>spage))
+  {
+     //read-modify-write access:
+     writeLCD(LCDI_RMW,1);
+     writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+     writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+     writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&((epage))),1);     
+     mask=1;
+     for (i=1;i<efrac;i++) { mask<<=1; mask|=1; }  
+     
+     for (col=x1;col<=x2;col++)
+     {
+       readLCD();//dummy?
+       writeLCD(((readLCD()&(~mask))|((mask)&(~color))),0);
+     }
+     writeLCD(LCDI_RMWEND,1);  
+     
+     //epage--; //this page was partially filled.
+  }
+  
+  
+  // full page write iff  
+  while (epage>spage8)
+  {
+     //some space can be written only:
+     //setup page    
+    writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&(spage8)),1);
+    writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+    writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+    for (col=x1;col<=x2;col++)
+    {
+      writeLCD((~color),0);
+    }
+    spage8++;
+  }
+
+}
+
+
+void scrWriteBitmap(scr_coord_t left_x, scr_coord_t top_y, scr_coord_t right_x, scr_coord_t bot_y, scr_bitmapbuf_t *buf)
+{
+  uint8_t col, sfrac, efrac, mask, mask2,i, epage, spage, spage8;
+  uint8_t ofsy,w,h,pixels,rowh;
+  scr_coord_t x1,x2,y1,y2;
+  //if ((x1>=128)||(y1>=64)||(x2>=128)||(y2>=64)) return;
+  
+  if (left_x>=0) x1 = left_x; else x1=0; if (left_x<SCR_RESOLUTION_X) x1 = left_x; else x1=SCR_RESOLUTION_X-1;
+  if (right_x>=0) x2 = right_x; else x2=0; if (right_x<SCR_RESOLUTION_X) x2 = right_x; else x2=SCR_RESOLUTION_X-1;
+  if (top_y>=0) y1 = top_y; else y1=0; if (top_y<SCR_RESOLUTION_Y) y1 = top_y; else y1=SCR_RESOLUTION_Y-1;
+  if (bot_y>=0) y2 = bot_y; else y2=0; if (bot_y<SCR_RESOLUTION_Y) y2 = bot_y; else y2=SCR_RESOLUTION_Y-1;
+    
+  spage = y1>>3; spage8=spage;
+  epage = (y2+1)>>3;
+  sfrac = y1&0x7;
+  efrac = (y2+1)&0x7;
+  
+  
+  ofsy=0;
+  w = x2-x1+1;
+  h = y2-y1;
+  
+ 
+  
+  if ((sfrac)||((efrac)&&(epage==spage)))
+  {
+     //read-modify-write access:     
+     mask=0;
+     for (i=0;i<sfrac;i++) { mask<<=1; mask|=1; }
+     rowh = 8-sfrac;
+     mask2=0;
+     if ((efrac)&&(epage==spage))
+     {
+       mask2=0xfe;
+       for (i=1;i<efrac;i++) { mask2<<=1; mask2&=0xFE; }
+       rowh=efrac-sfrac+1;
+     }
+     mask|=mask2;
+     writeLCD(LCDI_RMW,1);
+     writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+     writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+     writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&(y1>>3)),1);
+     for (col=0;col<w;col++)
+     {
+       pixels=0;
+       mask2=1;
+       for (i=0;i<rowh;i++) { if (!buf[(i)*w+col]) pixels|=mask2; mask2<<=1;  }
+       for (i=0;i<sfrac;i++) { pixels<<=1; }//align
+       readLCD();//dummy?
+       writeLCD((readLCD()&mask)|((~mask)&pixels),0);
+     }
+     writeLCD(LCDI_RMWEND,1);  
+     
+     spage8++; //this page was partially filled.
+     ofsy+= rowh;
+  }
+  
+  if ((efrac)&&(epage>spage))
+  {
+     //read-modify-write access:
+     writeLCD(LCDI_RMW,1);
+     writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+     writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+     writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&((epage))),1);     
+     mask=1;
+     for (i=1;i<efrac;i++) { mask<<=1; mask|=1; }  
+     rowh = efrac;
+     for (col=0;col<w;col++)
+     {
+       pixels=0;
+       mask2=1;
+       for (i=0;i<rowh;i++) { if (!buf[(i+((epage-spage-1)*8)+ofsy)*w+col]) pixels|=mask2; mask2<<=1;  }
+       readLCD();//dummy?
+       writeLCD(((readLCD()&(~mask))|((mask)&pixels)),0);
+     }
+     writeLCD(LCDI_RMWEND,1);  
+     
+     //epage--; //this page was partially filled.
+  }
+  
+  
+  // full page write iff  
+  while (epage>spage8)
+  {
+     //some space can be written only:
+     //setup page    
+    writeLCD(LCDI_SETPAGE|(LCDI_SETPAGE_M&(spage8)),1);
+    writeLCD(LCDI_SETCOLH|(LCDI_SETCOLH_M&(x1>>4)),1);
+    writeLCD(LCDI_SETCOLL|(LCDI_SETCOLL_M&(x1)),1);
+    for (col=0;col<w;col++)
+    {
+      pixels=0;
+      mask2=1;
+      for (i=0;i<8;i++) { if (!buf[(i+ofsy)*w+col]) pixels|=mask2; mask2<<=1;  }
+      writeLCD(pixels,0);
+    }
+    spage8++;
+    ofsy+= 8;
+  }  
+  
+}

@@ -1,0 +1,17 @@
+/* ========================================================================== */
+/*                                                                            */
+/*   Filename.c                                                               */
+/*   (c) 2001 Author                                                          */
+/*                                                                            */
+/*   Description                                                              */
+/*                                                                            */
+/* ========================================================================== */
+
+
+
+extern const tugui_Bitmap micro_arrow_up[5*6];
+extern const tugui_Bitmap micro_arrow_dn[5*6];
+extern const tugui_Bitmap micro_M[5*6];
+extern const tugui_Bitmap micro_Enter[5*6];
+extern const tugui_Bitmap micro_menu[5*6];
+

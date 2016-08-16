@@ -1,0 +1,115 @@
+/**
+ * \file sdcard.h
+ * Header: SD card interface
+ * 
+ * SD card interface and communication handling
+ * 
+ * AT91SAM7S-128 USB Mass Storage Device with SD Card by Michael Wolf\n
+ * Copyright (C) 2008 Michael Wolf\n\n
+ * 
+ * This program is free software: you can redistribute it and/or modify\n
+ * it under the terms of the GNU General Public License as published by\n
+ * the Free Software Foundation, either version 3 of the License, or\n
+ * any later version.\n\n
+ * 
+ * This program is distributed in the hope that it will be useful,\n
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of\n
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n
+ * GNU General Public License for more details.\n\n
+ * 
+ * You should have received a copy of the GNU General Public License\n
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.\n
+ * 
+ */
+#ifndef SDCARD_H_
+#define SDCARD_H_
+
+#include <stdint.h>
+#include <utils/macros.h>
+
+#define SD_GO_IDLE_STATE            0       //!< software reset
+#define SD_SEND_OP_COND             1       //!< brings card out of idle state
+#define SD_SEND_IF_COND             8       //!< send interface condition
+#define SD_SEND_CSD                 9       //!< ask card to send card speficic data (CSD)
+#define SD_SEND_CID                 10      //!< ask card to send card identification (CID)
+#define SD_STOP_MULTI_TRANS         12      //!< stop transmission on multiple block read
+#define SD_SEND_STATUS              13      //!< ask the card to send it's status register
+#define SD_SET_BLOCKLEN             16      //!< sets the block length used by the memory card
+#define SD_READ_SINGLE_BLOCK        17      //!< read single block
+#define SD_READ_MULTI_BLOCK         18      //!< read multiple block
+#define SD_WRITE_BLOCK              24      //!< writes a single block
+#define SD_WRITE_MULTI_BLOCK        25      //!< writes multiple blocks
+#define SD_PROGRAM_CSD              27      //!< change the bits in CSD
+#define SD_SET_WRITE_PROT           28      //!< sets the write protection bit
+#define SD_CLR_WRITE_PROT           29      //!< clears the write protection bit
+#define SD_SEND_WRITE_PROT          30      //!< checks the write protection bit
+#define SD_TAG_SECTOR_START         32      //!< Sets the address of the first sector of the erase group#define SD_TAG_SECTOR_END                      33
+#define SD_SET_LAST_GROUP           33      //!< Sets the address of the last sector of the erase group
+#define SD_UNTAG_SECTOR             34      //!< removes a sector from the selected group
+#define SD_TAG_ERASE_GROUP_START    35      //!< Sets the address of the first group
+#define SD_TAG_ERARE_GROUP_END      36      //!< Sets the address of the last erase group
+#define SD_UNTAG_ERASE_GROUP        37      //!< removes a group from the selected section
+#define SD_ERASE                    38      //!< erase all selected groups
+#define SD_LOCK_BLOCK               42      //!< locks a block
+#define SD_APP_CMD                  55      //!< next command is an application specific command
+#define SD_READ_OCR                 58      //!< reads the OCR register
+#define SD_CRC_ON_OFF               59      //!< turns CRC off
+
+#define SD_ACMD_SEND_OP_COND        41      //!<  reads the OCR register
+
+// R1 Response bit-defines
+#define SD_R1_BUSY                  0x80    //!< card busy, not used
+#define SD_R1_PARAMETER             0x40    //!< command’s argument out of range
+#define SD_R1_ADDRESS               0x20    //!< misaligned address error
+#define SD_R1_ERASE_SEQ             0x10    //!< error in the sequence of erase commands occurred
+#define SD_R1_COM_CRC               0x08    //!< CRC check of the last command failed
+#define SD_R1_ILLEGAL_COM           0x04    //!< illegal command code was detected
+#define SD_R1_ERASE_RESET           0x02    //!< erase sequence was cleared before executing
+#define SD_R1_IDLE_STATE            0x01    //!< card in idle state
+
+// Data Start tokens
+#define SD_STARTBLOCK_READ          0xFE    //!< data token single block read
+#define SD_STARTBLOCK_WRITE         0xFE    //!< data token single block write
+#define SD_STARTBLOCK_MWRITE        0xFC    //!< data token multi block write
+
+//!  Generic callback function type
+////
+////         Since ARM Procedure Call standard allow for 4 parameters to be
+////         stored in r0-r3 instead of being pushed on the stack, functions with
+////         less than 4 parameters can be cast into a callback in a transparent
+////         way.
+
+/*
+typedef void (*Callback_f)(unsigned int, unsigned int,
+                           unsigned int, unsigned int);
+*/
+
+// SD function return codes
+enum {
+    SD_OK = 0,          //!< Status OK
+    SD_ERROR,           //!< Card error
+    SD_NOCARD,           //!< Card not present
+    SD_STATUS_READY,    //!< Card ready for new transfer
+    SD_STATUS_BUSY,     //!< Card busy
+    SD_E_IDLE,          //!< Go to idle mode error
+    SD_E_VOLT,          //!< Voltage range mismatch error
+    SD_E_INIT           //!< Card init error
+};
+
+uint8_t sd_card_detect(void);
+int8_t sd_init(void);
+int8_t sd_lock(void);
+int8_t sd_unlock(void);
+//uint32_t sd_info(void);
+uint64_t sd_info(void);
+uint64_t sd_get_size(void);
+int8_t sd_readsector(uint32_t lba,
+                     uint8_t *buffer,
+                     Callback_f   fCallback,
+                     void *pArgument);
+uint8_t sd_read_n(uint32_t block,uint16_t loffset, uint16_t nbytes, uint8_t * buffer);
+int8_t sd_writesector(uint32_t lba,
+                      uint8_t *buffer,
+                      Callback_f   fCallback,
+                      void *pArgument);
+#endif /*SDCARD_H_*/

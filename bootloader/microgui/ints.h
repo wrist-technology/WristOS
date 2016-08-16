@@ -1,0 +1,16 @@
+/* ========================================================================== */
+/*                                                                            */
+/*   Filename.c                                                               */
+/*   (c) 2001 Author                                                          */
+/*                                                                            */
+/*   Description                                                              */
+/*                                                                            */
+/* ========================================================================== */
+
+#ifndef _INTS_H_
+#define _INTS_H_
+typedef unsigned short int uint8_t;
+typedef unsigned int uint16_t;
+typedef unsigned int uint32_t;
+
+#endif

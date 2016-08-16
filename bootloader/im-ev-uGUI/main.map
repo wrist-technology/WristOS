@@ -1,0 +1,1319 @@
+Archive member included because of file (symbol)
+
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+                              obj/xcode-im_rprintf.o (__udivsi3)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+                              obj/xcode-im_microgui.o (__divsi3)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+                              obj/xcode-im_rprintf.o (__umodsi3)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+                              c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o) (__div0)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+                              obj/xcode-im_sdcard.o (memcpy)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+                              obj/xcode-im_rprintf.o (strlen)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+                              obj/xcode-im_blconfgui.o (strncpy)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+                              obj/xcode-im_rprintf.o (strnlen)
+c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+                              obj/xcode-im_blconfgui.o (strstr)
+
+Allocating common symbols
+Common symbol       size              file
+
+timeval             0x4               obj/xcode-im_time.o
+sfilelist           0x200             obj/xcode-im_blconfgui.o
+scrscrX2            0x2               obj/xcode-im_screen.o
+winStat             0x94              obj/xcode-im_blconfgui.o
+winImageFile        0x14              obj/xcode-im_blconfgui.o
+winImage            0x94              obj/xcode-im_blconfgui.o
+bootrecord          0x224             obj/xcode-im_blconfgui.o
+filelist            0x40              obj/xcode-im_blconfgui.o
+winHWstatWrite      0x4               obj/xcode-im_blconfgui.o
+winBtnsTitle        0x14              obj/xcode-im_blconfgui.o
+hwUID               0x4               obj/xcode-im_nvmrc.o
+rprintfStr          0x4               obj/xcode-im_rprintf.o
+fontBuf             0x230             obj/xcode-im_font.o
+scrscrY2            0x2               obj/xcode-im_screen.o
+evtbuf              0x20              obj/xcode-im_microgui.o
+buff                0x28              obj/xcode-im_blconfgui.o
+scrscrY1            0x2               obj/xcode-im_screen.o
+winBtns             0x94              obj/xcode-im_blconfgui.o
+ugdfgColor          0x4               obj/xcode-im_ugscrdrv.o
+winMain             0x94              obj/xcode-im_blconfgui.o
+xchar               0x1               obj/xcode-im_ugscrdrv.o
+r                   0x4               obj/xcode-im_blconfgui.o
+winMiscTitle        0x14              obj/xcode-im_blconfgui.o
+winQry              0x94              obj/xcode-im_blconfgui.o
+winQryListbox       0x48              obj/xcode-im_blconfgui.o
+winMainMenu         0x48              obj/xcode-im_blconfgui.o
+bootname            0x20              obj/xcode-im_blconfgui.o
+scrrot              0x1               obj/xcode-im_screen.o
+winPostListbox      0x48              obj/xcode-im_blconfgui.o
+winMainUpBtnLab     0x14              obj/xcode-im_blconfgui.o
+winEProp            0x94              obj/xcode-im_blconfgui.o
+ugdbgColor          0x4               obj/xcode-im_ugscrdrv.o
+winQryTitle         0x14              obj/xcode-im_blconfgui.o
+winBtnListbox       0x48              obj/xcode-im_blconfgui.o
+scrscrX1            0x2               obj/xcode-im_screen.o
+sd_sectorbuffer     0x200             obj/xcode-im_sdcard.o
+winEPropListbox     0x48              obj/xcode-im_blconfgui.o
+wins                0x28              obj/xcode-im_microgui.o
+winPost             0x94              obj/xcode-im_blconfgui.o
+winMainDnBtnLab     0x14              obj/xcode-im_blconfgui.o
+winMisc             0x94              obj/xcode-im_blconfgui.o
+winPostTitle        0x14              obj/xcode-im_blconfgui.o
+tick1s              0x2               obj/xcode-im_time.o
+bread               0x4               obj/xcode-im_blconfgui.o
+winStatTitle        0x14              obj/xcode-im_blconfgui.o
+sd_numsectors       0x4               obj/xcode-im_sdcard.o
+winMiscListbox      0x48              obj/xcode-im_blconfgui.o
+comBtnCancel        0x34              obj/xcode-im_blconfgui.o
+ychar               0x1               obj/xcode-im_ugscrdrv.o
+evtbwi              0x1               obj/xcode-im_microgui.o
+ugdfont             0x1               obj/xcode-im_ugscrdrv.o
+evtbri              0x1               obj/xcode-im_microgui.o
+scrmirror           0x1               obj/xcode-im_screen.o
+winImageTitle       0x14              obj/xcode-im_blconfgui.o
+winImageListbox     0x48              obj/xcode-im_blconfgui.o
+blconf              0x14              obj/xcode-im_nvmrc.o
+fatfs               0x230             obj/xcode-im_blconfgui.o
+winMainTitle        0x14              obj/xcode-im_blconfgui.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 obj/xcode-im_board_cstartup-im.o
+ .bss           0x00000000        0x0 obj/xcode-im_board_cstartup-im.o
+ .imageboot     0x00000000        0x0 obj/xcode-im_board_cstartup-im.o
+ .text          0x00000000        0x0 obj/xcode-im_main.o
+ .data          0x00000000        0x0 obj/xcode-im_main.o
+ .text          0x00000000        0x0 obj/xcode-im_ugscrdrv.o
+ .data          0x00000000        0x0 obj/xcode-im_ugscrdrv.o
+ .bss           0x00000000        0x0 obj/xcode-im_ugscrdrv.o
+ .text.ugd_line
+                0x00000000        0x0 obj/xcode-im_ugscrdrv.o
+ .text.ugd_charlen
+                0x00000000        0x0 obj/xcode-im_ugscrdrv.o
+ .text          0x00000000        0x0 obj/xcode-im_microgui.o
+ .data          0x00000000        0x0 obj/xcode-im_microgui.o
+ .text.uguiImage
+                0x00000000        0x0 obj/xcode-im_microgui.o
+ .text.uguiRuller
+                0x00000000        0x0 obj/xcode-im_microgui.o
+ .text.uguiBargraph
+                0x00000000        0x0 obj/xcode-im_microgui.o
+ .text.uguiContext
+                0x00000000        0x0 obj/xcode-im_microgui.o
+ .text          0x00000000        0x0 obj/xcode-im_fastfixmath.o
+ .data          0x00000000        0x0 obj/xcode-im_fastfixmath.o
+ .bss           0x00000000        0x0 obj/xcode-im_fastfixmath.o
+ .rodata        0x00000000        0x0 obj/xcode-im_fastfixmath.o
+ .text.ffm_mult
+                0x00000000        0x0 obj/xcode-im_fastfixmath.o
+ .text.ffm_sin  0x00000000        0x0 obj/xcode-im_fastfixmath.o
+ .text          0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .data          0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .bss           0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .text.BOARD_RemapRam
+                0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .text.LowLevelInit
+                0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .text.pioInit  0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .text.RSTC_reset
+                0x00000000        0x0 obj/xcode-im_board_lowlevel.o
+ .text          0x00000000        0x0 obj/xcode-im_pmc.o
+ .data          0x00000000        0x0 obj/xcode-im_pmc.o
+ .bss           0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_DisableProcessorClock
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .rodata        0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_EnablePeripheral
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_DisablePeripheral
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_EnableAllPeripherals
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_DisableAllPeripherals
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_IsAllPeriphEnabled
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_IsPeriphEnabled
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text.PMC_CPUInIdleMode
+                0x00000000        0x0 obj/xcode-im_pmc.o
+ .text          0x00000000        0x0 obj/xcode-im_serial.o
+ .bss           0x00000000        0x0 obj/xcode-im_serial.o
+ .text.dbg_usart_getchar
+                0x00000000        0x0 obj/xcode-im_serial.o
+ .text          0x00000000        0x0 obj/xcode-im_spi.o
+ .bss           0x00000000        0x0 obj/xcode-im_spi.o
+ .text.spi_init
+                0x00000000        0x0 obj/xcode-im_spi.o
+ .text          0x00000000        0x0 obj/xcode-im_delay.o
+ .data          0x00000000        0x0 obj/xcode-im_delay.o
+ .bss           0x00000000        0x0 obj/xcode-im_delay.o
+ .text          0x00000000        0x0 obj/xcode-im_rprintf.o
+ .data          0x00000000        0x0 obj/xcode-im_rprintf.o
+ .bss           0x00000000        0x0 obj/xcode-im_rprintf.o
+ .text.spucharInit
+                0x00000000        0x0 obj/xcode-im_rprintf.o
+ .text.sputchar
+                0x00000000        0x0 obj/xcode-im_rprintf.o
+ COMMON         0x00000000        0x0 obj/xcode-im_rprintf.o
+ .text          0x00000000        0x0 obj/xcode-im_rscanf.o
+ .data          0x00000000        0x0 obj/xcode-im_rscanf.o
+ .bss           0x00000000        0x0 obj/xcode-im_rscanf.o
+ .text.scanline
+                0x00000000        0x0 obj/xcode-im_rscanf.o
+ .text          0x00000000        0x0 obj/xcode-im_sdcard.o
+ .data          0x00000000        0x0 obj/xcode-im_sdcard.o
+ .text.sd_card_detect
+                0x00000000        0x0 obj/xcode-im_sdcard.o
+ .text.sd_init  0x00000000        0x0 obj/xcode-im_sdcard.o
+ .rodata        0x00000000        0x0 obj/xcode-im_sdcard.o
+ .text.sd_info  0x00000000        0x0 obj/xcode-im_sdcard.o
+ .text.sd_read_n
+                0x00000000        0x0 obj/xcode-im_sdcard.o
+ .text.sd_write_n
+                0x00000000        0x0 obj/xcode-im_sdcard.o
+ COMMON         0x00000000        0x0 obj/xcode-im_sdcard.o
+ .text          0x00000000        0x0 obj/xcode-im_ff.o
+ .data          0x00000000        0x0 obj/xcode-im_ff.o
+ .text.dir_remove
+                0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_lseek  0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_stat   0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_getfree
+                0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_truncate
+                0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_unlink
+                0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_mkdir  0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_chmod  0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_utime  0x00000000        0x0 obj/xcode-im_ff.o
+ .text.f_rename
+                0x00000000        0x0 obj/xcode-im_ff.o
+ .text          0x00000000        0x0 obj/xcode-im_diskio.o
+ .data          0x00000000        0x0 obj/xcode-im_diskio.o
+ .bss           0x00000000        0x0 obj/xcode-im_diskio.o
+ .text          0x00000000        0x0 obj/xcode-im_screen.o
+ .data          0x00000000        0x0 obj/xcode-im_screen.o
+ .bss           0x00000000        0x0 obj/xcode-im_screen.o
+ .text.scrInit  0x00000000        0x0 obj/xcode-im_screen.o
+ .text.scrWriteRectOLD
+                0x00000000        0x0 obj/xcode-im_screen.o
+ .text.scrWriteBitmapOLD
+                0x00000000        0x0 obj/xcode-im_screen.o
+ .text          0x00000000        0x0 obj/xcode-im_oled.o
+ .data          0x00000000        0x0 obj/xcode-im_oled.o
+ .bss           0x00000000        0x0 obj/xcode-im_oled.o
+ .text.oledWrite
+                0x00000000        0x0 obj/xcode-im_oled.o
+ .text.oledInitHw
+                0x00000000        0x0 obj/xcode-im_oled.o
+ .text.oledScreen
+                0x00000000        0x0 obj/xcode-im_oled.o
+ .text          0x00000000        0x0 obj/xcode-im_font.o
+ .text.fontPutChar8x8
+                0x00000000        0x0 obj/xcode-im_font.o
+ .text          0x00000000        0x0 obj/xcode-im_i2c.o
+ .data          0x00000000        0x0 obj/xcode-im_i2c.o
+ .bss           0x00000000        0x0 obj/xcode-im_i2c.o
+ .text.i2cMultipleWriteByteInit
+                0x00000000        0x0 obj/xcode-im_i2c.o
+ .text.i2cMultipleWriteByte
+                0x00000000        0x0 obj/xcode-im_i2c.o
+ .text.i2cMultipleWriteEnd
+                0x00000000        0x0 obj/xcode-im_i2c.o
+ .text          0x00000000        0x0 obj/xcode-im_blconfgui.o
+ .bss           0x00000000        0x0 obj/xcode-im_blconfgui.o
+ .text          0x00000000        0x0 obj/xcode-im_nvmrc.o
+ .data          0x00000000        0x0 obj/xcode-im_nvmrc.o
+ .bss           0x00000000        0x0 obj/xcode-im_nvmrc.o
+ .text          0x00000000        0x0 obj/xcode-im_abort.o
+ .data          0x00000000        0x0 obj/xcode-im_abort.o
+ .bss           0x00000000        0x0 obj/xcode-im_abort.o
+ .text.myPAbt_HandlerR
+                0x00000000        0x0 obj/xcode-im_abort.o
+ .text.myDAbt_HandlerR
+                0x00000000        0x0 obj/xcode-im_abort.o
+ .text          0x00000000        0x0 obj/xcode-im_time.o
+ .data          0x00000000        0x0 obj/xcode-im_time.o
+ .bss           0x00000000        0x0 obj/xcode-im_time.o
+ .text.timer_get_timer
+                0x00000000        0x0 obj/xcode-im_time.o
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .data          0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+ .bss           0x00000000        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sram             0x00000000         0x00008000         w !xr
+xdatasram        0x10080000         0x00008000         w !xr
+xcodesram        0x10000000         0x00070000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libm.a
+LOAD obj/xcode-im_board_cstartup-im.o
+LOAD obj/xcode-im_main.o
+LOAD obj/xcode-im_ugscrdrv.o
+LOAD obj/xcode-im_microgui.o
+LOAD obj/xcode-im_fastfixmath.o
+LOAD obj/xcode-im_board_lowlevel.o
+LOAD obj/xcode-im_pmc.o
+LOAD obj/xcode-im_serial.o
+LOAD obj/xcode-im_spi.o
+LOAD obj/xcode-im_delay.o
+LOAD obj/xcode-im_rprintf.o
+LOAD obj/xcode-im_rscanf.o
+LOAD obj/xcode-im_sdcard.o
+LOAD obj/xcode-im_ff.o
+LOAD obj/xcode-im_diskio.o
+LOAD obj/xcode-im_screen.o
+LOAD obj/xcode-im_oled.o
+LOAD obj/xcode-im_font.o
+LOAD obj/xcode-im_i2c.o
+LOAD obj/xcode-im_blconfgui.o
+LOAD obj/xcode-im_nvmrc.o
+LOAD obj/xcode-im_abort.o
+LOAD obj/xcode-im_time.o
+START GROUP
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a
+LOAD c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libc.a
+END GROUP
+
+.fixed          0x10000000     0xdad8
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _sfixed = .
+ *(.imageboot)
+ *(.text*)
+ .text          0x10000000       0xa0 obj/xcode-im_board_cstartup-im.o
+                0x10000000                entry
+ .text.main     0x100000a0      0x150 obj/xcode-im_main.o
+                0x100000a0                main
+ .text.ugd_rect
+                0x100001f0      0x150 obj/xcode-im_ugscrdrv.o
+                0x100001f0                ugd_rect
+ .text.ugd_bitmap
+                0x10000340       0xbc obj/xcode-im_ugscrdrv.o
+                0x10000340                ugd_bitmap
+ .text.ugd_putchar
+                0x100003fc       0xbc obj/xcode-im_ugscrdrv.o
+                0x100003fc                ugd_putchar
+ .text.ugd_charh
+                0x100004b8       0x80 obj/xcode-im_ugscrdrv.o
+                0x100004b8                ugd_charh
+ .text.ugd_print
+                0x10000538       0xd8 obj/xcode-im_ugscrdrv.o
+                0x10000538                ugd_print
+ .text.uguiBtn  0x10000610      0x4e0 obj/xcode-im_microgui.o
+                0x10000610                uguiBtn
+ .text.uguiLabel
+                0x10000af0      0x148 obj/xcode-im_microgui.o
+                0x10000af0                uguiLabel
+ .text.uguiListbox
+                0x10000c38      0x498 obj/xcode-im_microgui.o
+                0x10000c38                uguiListbox
+ .text.redraw.2545
+                0x100010d0      0x5cc obj/xcode-im_microgui.o
+ .text.itemprint.2542
+                0x1000169c      0x3f4 obj/xcode-im_microgui.o
+ .text.uguiWin  0x10001a90      0x2e8 obj/xcode-im_microgui.o
+                0x10001a90                uguiWin
+ .text.uguiWinAddObj
+                0x10001d78       0xbc obj/xcode-im_microgui.o
+                0x10001d78                uguiWinAddObj
+ .text.uguiWriteEvt
+                0x10001e34       0x64 obj/xcode-im_microgui.o
+                0x10001e34                uguiWriteEvt
+ .text.uguiReadEvt
+                0x10001e98       0x9c obj/xcode-im_microgui.o
+                0x10001e98                uguiReadEvt
+ .text.uguiContextAddWin
+                0x10001f34       0xa0 obj/xcode-im_microgui.o
+                0x10001f34                uguiContextAddWin
+ .text.uguiContextSwitch
+                0x10001fd4       0x94 obj/xcode-im_microgui.o
+                0x10001fd4                uguiContextSwitch
+ .text.uguiLastContext
+                0x10002068       0x20 obj/xcode-im_microgui.o
+                0x10002068                uguiLastContext
+ .text.uguiContextWrapper
+                0x10002088       0x6c obj/xcode-im_microgui.o
+                0x10002088                uguiContextWrapper
+ .text.uguiInitContext
+                0x100020f4       0x60 obj/xcode-im_microgui.o
+                0x100020f4                uguiInitContext
+ .text.defaultSpuriousHandler
+                0x10002154       0x10 obj/xcode-im_board_lowlevel.o
+                0x10002154                defaultSpuriousHandler
+ .text.defaultFiqHandler
+                0x10002164       0x10 obj/xcode-im_board_lowlevel.o
+                0x10002164                defaultFiqHandler
+ .text.defaultIrqHandler
+                0x10002174       0x10 obj/xcode-im_board_lowlevel.o
+                0x10002174                defaultIrqHandler
+ .text.initAIC  0x10002184       0xf8 obj/xcode-im_board_lowlevel.o
+                0x10002184                initAIC
+ .text.dbg_usart_init
+                0x1000227c       0x88 obj/xcode-im_serial.o
+                0x1000227c                dbg_usart_init
+ .text.dbg_usart_putchar
+                0x10002304       0x48 obj/xcode-im_serial.o
+                0x10002304                dbg_usart_putchar
+ .text.spi_byte
+                0x1000234c       0xe8 obj/xcode-im_spi.o
+                0x1000234c                spi_byte
+ .text.delay    0x10002434       0xa4 obj/xcode-im_delay.o
+                0x10002434                delay
+ .text.delayms  0x100024d8       0x58 obj/xcode-im_delay.o
+                0x100024d8                delayms
+ .text.rprintf  0x10002530      0xa30 obj/xcode-im_rprintf.o
+                0x10002530                rprintf
+ .text.sd_command
+                0x10002f60      0x150 obj/xcode-im_sdcard.o
+                0x10002f60                sd_command
+ .text.sd_send_dummys
+                0x100030b0       0x64 obj/xcode-im_sdcard.o
+                0x100030b0                sd_send_dummys
+ .text.sd_get_response
+                0x10003114       0x80 obj/xcode-im_sdcard.o
+                0x10003114                sd_get_response
+ .text.sd_get_datatoken
+                0x10003194       0x80 obj/xcode-im_sdcard.o
+                0x10003194                sd_get_datatoken
+ .text.sd_readsector
+                0x10003214      0x1e8 obj/xcode-im_sdcard.o
+                0x10003214                sd_readsector
+ .text.sd_writesector
+                0x100033fc      0x244 obj/xcode-im_sdcard.o
+                0x100033fc                sd_writesector
+ .text.mem_cpy  0x10003640       0x88 obj/xcode-im_ff.o
+ .text.mem_set  0x100036c8       0x74 obj/xcode-im_ff.o
+ .text.mem_cmp  0x1000373c       0xc4 obj/xcode-im_ff.o
+ .text.chk_chr  0x10003800       0x64 obj/xcode-im_ff.o
+ .text.move_window
+                0x10003864      0x1a4 obj/xcode-im_ff.o
+ .text.sync     0x10003a08      0x2dc obj/xcode-im_ff.o
+ .text.get_fat  0x10003ce4      0x2f4 obj/xcode-im_ff.o
+                0x10003ce4                get_fat
+ .text.put_fat  0x10003fd8      0x40c obj/xcode-im_ff.o
+                0x10003fd8                put_fat
+ .text.remove_chain
+                0x100043e4      0x138 obj/xcode-im_ff.o
+ .text.create_chain
+                0x1000451c      0x234 obj/xcode-im_ff.o
+ .text.clust2sect
+                0x10004750       0x7c obj/xcode-im_ff.o
+                0x10004750                clust2sect
+ .text.dir_sdi  0x100047cc      0x22c obj/xcode-im_ff.o
+ .text.dir_next
+                0x100049f8      0x394 obj/xcode-im_ff.o
+ .text.dir_find
+                0x10004d8c      0x144 obj/xcode-im_ff.o
+ .text.dir_read
+                0x10004ed0      0x120 obj/xcode-im_ff.o
+ .text.dir_register
+                0x10004ff0      0x180 obj/xcode-im_ff.o
+ .text.create_name
+                0x10005170      0x3bc obj/xcode-im_ff.o
+ .text.get_fileinfo
+                0x1000552c      0x240 obj/xcode-im_ff.o
+ .text.follow_path
+                0x1000576c      0x1f8 obj/xcode-im_ff.o
+ .text.check_fs
+                0x10005964      0x1b0 obj/xcode-im_ff.o
+ .text.chk_mounted
+                0x10005b14      0xab4 obj/xcode-im_ff.o
+ .text.validate
+                0x100065c8       0xac obj/xcode-im_ff.o
+ .text.f_mount  0x10006674       0xa0 obj/xcode-im_ff.o
+                0x10006674                f_mount
+ .text.f_open   0x10006714      0x578 obj/xcode-im_ff.o
+                0x10006714                f_open
+ .text.f_read   0x10006c8c      0x5b8 obj/xcode-im_ff.o
+                0x10006c8c                f_read
+ .text.f_write  0x10007244      0x660 obj/xcode-im_ff.o
+                0x10007244                f_write
+ .text.f_sync   0x100078a4      0x338 obj/xcode-im_ff.o
+                0x100078a4                f_sync
+ .text.f_close  0x10007bdc       0x58 obj/xcode-im_ff.o
+                0x10007bdc                f_close
+ .text.f_opendir
+                0x10007c34      0x1ac obj/xcode-im_ff.o
+                0x10007c34                f_opendir
+ .text.f_readdir
+                0x10007de0      0x140 obj/xcode-im_ff.o
+                0x10007de0                f_readdir
+ .text.disk_initialize
+                0x10007f20       0x24 obj/xcode-im_diskio.o
+                0x10007f20                disk_initialize
+ .text.disk_status
+                0x10007f44       0x24 obj/xcode-im_diskio.o
+                0x10007f44                disk_status
+ .text.disk_read
+                0x10007f68       0xd0 obj/xcode-im_diskio.o
+                0x10007f68                disk_read
+ .text.disk_write
+                0x10008038       0xd4 obj/xcode-im_diskio.o
+                0x10008038                disk_write
+ .text.disk_ioctl
+                0x1000810c       0x3c obj/xcode-im_diskio.o
+                0x1000810c                disk_ioctl
+ .text.get_fattime
+                0x10008148       0x1c obj/xcode-im_diskio.o
+                0x10008148                get_fattime
+ .text.scrWriteRect
+                0x10008164      0x42c obj/xcode-im_screen.o
+                0x10008164                scrWriteRect
+ .text.scrWriteBitmap
+                0x10008590      0x474 obj/xcode-im_screen.o
+                0x10008590                scrWriteBitmap
+ .text.oledWriteCommand
+                0x10008a04       0x6c obj/xcode-im_oled.o
+                0x10008a04                oledWriteCommand
+ .text.fontSetCharPos
+                0x10008a70       0x48 obj/xcode-im_font.o
+                0x10008a70                fontSetCharPos
+ .text.fontPutChar
+                0x10008ab8       0x34 obj/xcode-im_font.o
+                0x10008ab8                fontPutChar
+ .text.fontPutChar6x8
+                0x10008aec      0x228 obj/xcode-im_font.o
+                0x10008aec                fontPutChar6x8
+ .text.fontPutChar10x14
+                0x10008d14      0x2c4 obj/xcode-im_font.o
+                0x10008d14                fontPutChar10x14
+ .text.i2cMasterConf
+                0x10008fd8      0x154 obj/xcode-im_i2c.o
+                0x10008fd8                i2cMasterConf
+ .text.i2cWriteByte
+                0x1000912c       0xe0 obj/xcode-im_i2c.o
+                0x1000912c                i2cWriteByte
+ .text.i2cReadByte
+                0x1000920c      0x118 obj/xcode-im_i2c.o
+                0x1000920c                i2cReadByte
+ .text.i2cMultipleReadByteStart
+                0x10009324       0x44 obj/xcode-im_i2c.o
+                0x10009324                i2cMultipleReadByteStart
+ .text.i2cMultipleReadByteRead
+                0x10009368       0xa4 obj/xcode-im_i2c.o
+                0x10009368                i2cMultipleReadByteRead
+ .text.i2cMultipleReadByteEnd
+                0x1000940c      0x108 obj/xcode-im_i2c.o
+                0x1000940c                i2cMultipleReadByteEnd
+ .text.winMainSelectCallback
+                0x10009514      0x4b4 obj/xcode-im_blconfgui.o
+                0x10009514                winMainSelectCallback
+ .text.winImageSelectCallback
+                0x100099c8      0x1cc obj/xcode-im_blconfgui.o
+                0x100099c8                winImageSelectCallback
+ .text.winMiscSelectCallback
+                0x10009b94       0xc0 obj/xcode-im_blconfgui.o
+                0x10009b94                winMiscSelectCallback
+ .text.winBtnSelectCallback
+                0x10009c54       0xc0 obj/xcode-im_blconfgui.o
+                0x10009c54                winBtnSelectCallback
+ .text.winPostSelectCallback
+                0x10009d14       0x80 obj/xcode-im_blconfgui.o
+                0x10009d14                winPostSelectCallback
+ .text.winCancelBtnCallback
+                0x10009d94       0x54 obj/xcode-im_blconfgui.o
+                0x10009d94                winCancelBtnCallback
+ .text.winEPropSelectCallback
+                0x10009de8      0x394 obj/xcode-im_blconfgui.o
+                0x10009de8                winEPropSelectCallback
+ .text.winQrySelectCallback
+                0x1000a17c       0xb8 obj/xcode-im_blconfgui.o
+                0x1000a17c                winQrySelectCallback
+ .text.uguiPrintHWstat
+                0x1000a234      0x160 obj/xcode-im_blconfgui.o
+                0x1000a234                uguiPrintHWstat
+ .text.blConfGuiInit
+                0x1000a394     0x15c8 obj/xcode-im_blconfgui.o
+                0x1000a394                blConfGuiInit
+ .text.searchImages
+                0x1000b95c      0x27c obj/xcode-im_blconfgui.o
+                0x1000b95c                searchImages
+ .text.readBootImage
+                0x1000bbd8      0x164 obj/xcode-im_blconfgui.o
+                0x1000bbd8                readBootImage
+ .text.blConfig
+                0x1000bd3c      0x250 obj/xcode-im_blconfgui.o
+                0x1000bd3c                blConfig
+ .text.readSetupConf
+                0x1000bf8c      0x498 obj/xcode-im_nvmrc.o
+                0x1000bf8c                readSetupConf
+ .text.writeSetupConf
+                0x1000c424      0x2fc obj/xcode-im_nvmrc.o
+                0x1000c424                writeSetupConf
+ .text.resetByRstCtrl
+                0x1000c720       0x70 obj/xcode-im_nvmrc.o
+                0x1000c720                resetByRstCtrl
+ .text.getUID   0x1000c790       0x20 obj/xcode-im_nvmrc.o
+                0x1000c790                getUID
+ .text.getBatVoltage
+                0x1000c7b0      0x114 obj/xcode-im_nvmrc.o
+                0x1000c7b0                getBatVoltage
+ .text.timer_int
+                0x1000c8c4      0x104 obj/xcode-im_time.o
+                0x1000c8c4                timer_int
+ .text.timer_init
+                0x1000c9c8       0xa0 obj/xcode-im_time.o
+                0x1000c9c8                timer_init
+ .text          0x1000ca68      0x110 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+                0x1000ca68                __udivsi3
+                0x1000ca68                __aeabi_uidiv
+                0x1000cb60                __aeabi_uidivmod
+ .text          0x1000cb78       0xcc c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+                0x1000cb78                __umodsi3
+ .text          0x1000cc44        0x4 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+                0x1000cc44                __aeabi_ldiv0
+                0x1000cc44                __div0
+                0x1000cc44                __aeabi_idiv0
+ .text          0x1000cc48       0x9c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+                0x1000cc48                strlen
+ .text          0x1000cce4      0x10c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+                0x1000cce4                strncpy
+ .text          0x1000cdf0       0x4c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+                0x1000cdf0                strnlen
+ .text          0x1000ce3c       0x5c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+                0x1000ce3c                strstr
+ *(.rodata*)
+ .rodata        0x1000ce98       0x14 obj/xcode-im_main.o
+ .rodata        0x1000ceac       0x84 obj/xcode-im_microgui.o
+ .rodata        0x1000cf30       0x10 obj/xcode-im_ff.o
+ .rodata        0x1000cf40       0x14 obj/xcode-im_screen.o
+ .rodata        0x1000cf54      0x780 obj/xcode-im_font.o
+                0x1000cf54                pCharset10x14
+ .rodata        0x1000d6d4      0x3e4 obj/xcode-im_blconfgui.o
+ .rodata        0x1000dab8       0x20 obj/xcode-im_nvmrc.o
+                0x1000dad8                . = ALIGN (0x4)
+                0x1000dad8                _efixed = .
+                0x1000efd8                _efixedr = (. + 0x1500)
+
+.glue_7         0x1000dad8        0x0
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_board_cstartup-im.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_main.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_ugscrdrv.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_microgui.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_fastfixmath.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_board_lowlevel.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_pmc.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_serial.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_spi.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_delay.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_rprintf.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_rscanf.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_sdcard.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_ff.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_diskio.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_screen.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_oled.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_font.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_i2c.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_blconfgui.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_nvmrc.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_abort.o
+ .glue_7        0x1000dad8        0x0 obj/xcode-im_time.o
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .glue_7        0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.glue_7t        0x1000dad8        0x0
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_board_cstartup-im.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_main.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_ugscrdrv.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_microgui.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_fastfixmath.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_board_lowlevel.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_pmc.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_serial.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_spi.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_delay.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_rprintf.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_rscanf.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_sdcard.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_ff.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_diskio.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_screen.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_oled.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_font.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_i2c.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_blconfgui.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_nvmrc.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_abort.o
+ .glue_7t       0x1000dad8        0x0 obj/xcode-im_time.o
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .glue_7t       0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.vfp11_veneer   0x1000dad8        0x0
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_board_cstartup-im.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_main.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_ugscrdrv.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_microgui.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_fastfixmath.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_board_lowlevel.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_pmc.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_serial.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_spi.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_delay.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_rprintf.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_rscanf.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_sdcard.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_ff.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_diskio.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_screen.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_oled.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_font.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_i2c.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_blconfgui.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_nvmrc.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_abort.o
+ .vfp11_veneer  0x1000dad8        0x0 obj/xcode-im_time.o
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .vfp11_veneer  0x1000dad8        0x0 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.relocate       0x10080000     0x1108 load address 0x1000efd8
+                0x10080000                . = ALIGN (0x4)
+                0x10080000                _srelocate = .
+ *(.ramfunc)
+ *(.data)
+ .data          0x10080000        0x8 obj/xcode-im_serial.o
+                0x10080000                pDBG_USART
+                0x10080004                pDBG_PIO
+ .data          0x10080008        0x8 obj/xcode-im_spi.o
+                0x10080008                pSPI
+                0x1008000c                pSPI_PIO
+ .data          0x10080010     0x1004 obj/xcode-im_font.o
+                0x10081010                fontColor
+ .data          0x10081014       0xf4 obj/xcode-im_blconfgui.o
+                0x10081020                ini_winMainDnBtnLab
+                0x1008101c                ini_winMainUpBtnLab
+                0x1008107c                ini_winBtnRTitle
+                0x1008109c                ini_winMiscTitle
+                0x100810b4                postproplist
+                0x10081100                qrylist
+                0x100810d8                proplistT
+                0x100810c8                ini_winPostTitle
+                0x10081080                ini_winBtnPTitle
+                0x100810cc                ini_winStatTitle
+                0x100810a0                postlist
+                0x10081018                ini_winMainTitle
+                0x10081014                ini_comBtnName
+                0x10081044                ini_winImageTitle
+                0x100810f8                ini_winQrySaveExit
+                0x10081078                ini_NotAvail
+                0x10081024                mainmenu
+                0x1008108c                miscproplist
+                0x10081048                btnlist
+                0x10081060                btnproplist
+                0x10081094                proplistMSD
+                0x100810fc                ini_winQryExit
+                0x10081084                misclist
+                0x100810d0                proplist
+                0x10081108                . = ALIGN (0x4)
+                0x10081108                _erelocate = .
+
+.irqhandlers    0x00000000       0x6c load address 0x1000dad8
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                _sirqhandlers = .
+ *(.vectors)
+ .vectors       0x00000000       0x6c obj/xcode-im_board_cstartup-im.o
+                0x0000006c                . = ALIGN (0x4)
+                0x0000006c                _eirqhandlers = .
+
+.bss            0x0000006c     0x1152 load address 0x1000db44
+                0x0000006c                _szero = .
+ *(.bss)
+ .bss           0x0000006c        0x4 obj/xcode-im_main.o
+                0x0000006c                scrbuf
+ .bss           0x00000070        0x3 obj/xcode-im_microgui.o
+                0x00000070                wini
+                0x00000072                winlast
+                0x00000071                winn
+ .bss           0x00000073        0x2 obj/xcode-im_sdcard.o
+                0x00000074                sdhc_card
+                0x00000073                ver2_card
+ *fill*         0x00000075        0x3 00
+ .bss           0x00000078        0x8 obj/xcode-im_ff.o
+ .bss           0x00000080        0xc obj/xcode-im_font.o
+                0x00000088                fontCurrPosY
+                0x00000084                fontCurrPosX
+                0x00000080                fontBgColor
+                0x00000086                fontCarridgeReturnPosX
+                0x0000008c                . = ALIGN (0x4)
+                0x0000008c                _ezero = .
+ COMMON         0x0000008c        0xe obj/xcode-im_ugscrdrv.o
+                0x0000008c                ugdfgColor
+                0x00000090                xchar
+                0x00000094                ugdbgColor
+                0x00000098                ychar
+                0x00000099                ugdfont
+ *fill*         0x0000009a        0x2 00
+ COMMON         0x0000009c       0x4a obj/xcode-im_microgui.o
+                0x0000009c                evtbuf
+                0x000000bc                wins
+                0x000000e4                evtbwi
+                0x000000e5                evtbri
+ COMMON         0x000000e6        0xb obj/xcode-im_screen.o
+                0x000000e6                scrscrX2
+                0x000000e8                scrscrY2
+                0x000000ea                scrscrY1
+                0x000000ec                scrrot
+                0x000000ee                scrscrX1
+                0x000000f0                scrmirror
+ *fill*         0x000000f1        0x3 00
+ COMMON         0x000000f4      0x230 obj/xcode-im_font.o
+                0x000000f4                fontBuf
+ COMMON         0x00000324      0xe7c obj/xcode-im_blconfgui.o
+                0x00000324                sfilelist
+                0x00000524                winStat
+                0x000005b8                winImageFile
+                0x000005cc                winImage
+                0x00000660                bootrecord
+                0x00000884                filelist
+                0x000008c4                winHWstatWrite
+                0x000008c8                winBtnsTitle
+                0x000008dc                buff
+                0x00000904                winBtns
+                0x00000998                winMain
+                0x00000a2c                r
+                0x00000a30                winMiscTitle
+                0x00000a44                winQry
+                0x00000ad8                winQryListbox
+                0x00000b20                winMainMenu
+                0x00000b68                bootname
+                0x00000b88                winPostListbox
+                0x00000bd0                winMainUpBtnLab
+                0x00000be4                winEProp
+                0x00000c78                winQryTitle
+                0x00000c8c                winBtnListbox
+                0x00000cd4                winEPropListbox
+                0x00000d1c                winPost
+                0x00000db0                winMainDnBtnLab
+                0x00000dc4                winMisc
+                0x00000e58                winPostTitle
+                0x00000e6c                bread
+                0x00000e70                winStatTitle
+                0x00000e84                winMiscListbox
+                0x00000ecc                comBtnCancel
+                0x00000f00                winImageTitle
+                0x00000f14                winImageListbox
+                0x00000f5c                fatfs
+                0x0000118c                winMainTitle
+ COMMON         0x000011a0       0x18 obj/xcode-im_nvmrc.o
+                0x000011a0                hwUID
+                0x000011a4                blconf
+ COMMON         0x000011b8        0x6 obj/xcode-im_time.o
+                0x000011b8                timeval
+                0x000011bc                tick1s
+                0x00008000                _sstack = 0x8000
+                0x000011be                end = .
+OUTPUT(bin/im-rev0-btwwev-2-at91sam7se512-xcode-im.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 obj/xcode-im_board_cstartup-im.o
+ .ARM.attributes
+                0x00000010       0x10 obj/xcode-im_main.o
+ .ARM.attributes
+                0x00000020       0x10 obj/xcode-im_ugscrdrv.o
+ .ARM.attributes
+                0x00000030       0x10 obj/xcode-im_microgui.o
+ .ARM.attributes
+                0x00000040       0x10 obj/xcode-im_fastfixmath.o
+ .ARM.attributes
+                0x00000050       0x10 obj/xcode-im_board_lowlevel.o
+ .ARM.attributes
+                0x00000060       0x10 obj/xcode-im_pmc.o
+ .ARM.attributes
+                0x00000070       0x10 obj/xcode-im_serial.o
+ .ARM.attributes
+                0x00000080       0x10 obj/xcode-im_spi.o
+ .ARM.attributes
+                0x00000090       0x10 obj/xcode-im_delay.o
+ .ARM.attributes
+                0x000000a0       0x10 obj/xcode-im_rprintf.o
+ .ARM.attributes
+                0x000000b0       0x10 obj/xcode-im_rscanf.o
+ .ARM.attributes
+                0x000000c0       0x10 obj/xcode-im_sdcard.o
+ .ARM.attributes
+                0x000000d0       0x10 obj/xcode-im_ff.o
+ .ARM.attributes
+                0x000000e0       0x10 obj/xcode-im_diskio.o
+ .ARM.attributes
+                0x000000f0       0x10 obj/xcode-im_screen.o
+ .ARM.attributes
+                0x00000100       0x10 obj/xcode-im_oled.o
+ .ARM.attributes
+                0x00000110       0x10 obj/xcode-im_font.o
+ .ARM.attributes
+                0x00000120       0x10 obj/xcode-im_i2c.o
+ .ARM.attributes
+                0x00000130       0x10 obj/xcode-im_blconfgui.o
+ .ARM.attributes
+                0x00000140       0x10 obj/xcode-im_nvmrc.o
+ .ARM.attributes
+                0x00000150       0x10 obj/xcode-im_abort.o
+ .ARM.attributes
+                0x00000160       0x10 obj/xcode-im_time.o
+ .ARM.attributes
+                0x00000170       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000180       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000190       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .ARM.attributes
+                0x000001a0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000001b0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000001c0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x000001d0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x000001e0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .ARM.attributes
+                0x000001f0       0x10 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_line     0x00000000     0x2a3f
+ .debug_line    0x00000000       0xaa obj/xcode-im_board_cstartup-im.o
+ .debug_line    0x000000aa       0xf4 obj/xcode-im_main.o
+ .debug_line    0x0000019e      0x143 obj/xcode-im_ugscrdrv.o
+ .debug_line    0x000002e1      0x301 obj/xcode-im_microgui.o
+ .debug_line    0x000005e2       0x6a obj/xcode-im_fastfixmath.o
+ .debug_line    0x0000064c      0x153 obj/xcode-im_board_lowlevel.o
+ .debug_line    0x0000079f      0x109 obj/xcode-im_pmc.o
+ .debug_line    0x000008a8       0xb0 obj/xcode-im_serial.o
+ .debug_line    0x00000958       0xf3 obj/xcode-im_spi.o
+ .debug_line    0x00000a4b       0x95 obj/xcode-im_delay.o
+ .debug_line    0x00000ae0      0x170 obj/xcode-im_rprintf.o
+ .debug_line    0x00000c50       0x45 obj/xcode-im_rscanf.o
+ .debug_line    0x00000c95      0x267 obj/xcode-im_sdcard.o
+ .debug_line    0x00000efc      0x7aa obj/xcode-im_ff.o
+ .debug_line    0x000016a6      0x12b obj/xcode-im_diskio.o
+ .debug_line    0x000017d1      0x1a8 obj/xcode-im_screen.o
+ .debug_line    0x00001979      0x138 obj/xcode-im_oled.o
+ .debug_line    0x00001ab1      0x148 obj/xcode-im_font.o
+ .debug_line    0x00001bf9      0x18e obj/xcode-im_i2c.o
+ .debug_line    0x00001d87      0x404 obj/xcode-im_blconfgui.o
+ .debug_line    0x0000218b      0x123 obj/xcode-im_nvmrc.o
+ .debug_line    0x000022ae       0x51 obj/xcode-im_abort.o
+ .debug_line    0x000022ff       0xe3 obj/xcode-im_time.o
+ .debug_line    0x000023e2       0x96 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_line    0x00002478       0xa2 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_line    0x0000251a       0x7f c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_line    0x00002599       0x6a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00002603       0xf8 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_line    0x000026fb       0xc8 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_line    0x000027c3       0xf1 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_line    0x000028b4       0xc1 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_line    0x00002975       0xca c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_info     0x00000000     0x87e8
+ .debug_info    0x00000000       0x6c obj/xcode-im_board_cstartup-im.o
+ .debug_info    0x0000006c      0x487 obj/xcode-im_main.o
+ .debug_info    0x000004f3      0x2dd obj/xcode-im_ugscrdrv.o
+ .debug_info    0x000007d0      0xbde obj/xcode-im_microgui.o
+ .debug_info    0x000013ae       0xe1 obj/xcode-im_fastfixmath.o
+ .debug_info    0x0000148f      0x931 obj/xcode-im_board_lowlevel.o
+ .debug_info    0x00001dc0      0x311 obj/xcode-im_pmc.o
+ .debug_info    0x000020d1      0x533 obj/xcode-im_serial.o
+ .debug_info    0x00002604      0x6a9 obj/xcode-im_spi.o
+ .debug_info    0x00002cad       0xc8 obj/xcode-im_delay.o
+ .debug_info    0x00002d75      0x26d obj/xcode-im_rprintf.o
+ .debug_info    0x00002fe2       0xb0 obj/xcode-im_rscanf.o
+ .debug_info    0x00003092      0x734 obj/xcode-im_sdcard.o
+ .debug_info    0x000037c6     0x16d6 obj/xcode-im_ff.o
+ .debug_info    0x00004e9c      0x2cb obj/xcode-im_diskio.o
+ .debug_info    0x00005167      0x4fc obj/xcode-im_screen.o
+ .debug_info    0x00005663      0x661 obj/xcode-im_oled.o
+ .debug_info    0x00005cc4      0x2a6 obj/xcode-im_font.o
+ .debug_info    0x00005f6a      0x52f obj/xcode-im_i2c.o
+ .debug_info    0x00006499     0x13d0 obj/xcode-im_blconfgui.o
+ .debug_info    0x00007869      0x244 obj/xcode-im_nvmrc.o
+ .debug_info    0x00007aad       0xb6 obj/xcode-im_abort.o
+ .debug_info    0x00007b63      0x58a obj/xcode-im_time.o
+ .debug_info    0x000080ed       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_info    0x0000817f       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_info    0x00008211       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_info    0x000082a3       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00008335      0x10e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_info    0x00008443       0xd7 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_info    0x0000851a      0x12a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_info    0x00008644       0xc9 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_info    0x0000870d       0xdb c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_abbrev   0x00000000     0x19f5
+ .debug_abbrev  0x00000000       0x12 obj/xcode-im_board_cstartup-im.o
+ .debug_abbrev  0x00000012       0xe4 obj/xcode-im_main.o
+ .debug_abbrev  0x000000f6       0xaa obj/xcode-im_ugscrdrv.o
+ .debug_abbrev  0x000001a0      0x1ae obj/xcode-im_microgui.o
+ .debug_abbrev  0x0000034e       0x9a obj/xcode-im_fastfixmath.o
+ .debug_abbrev  0x000003e8      0x110 obj/xcode-im_board_lowlevel.o
+ .debug_abbrev  0x000004f8       0xfe obj/xcode-im_pmc.o
+ .debug_abbrev  0x000005f6      0x105 obj/xcode-im_serial.o
+ .debug_abbrev  0x000006fb      0x10c obj/xcode-im_spi.o
+ .debug_abbrev  0x00000807       0x7d obj/xcode-im_delay.o
+ .debug_abbrev  0x00000884      0x133 obj/xcode-im_rprintf.o
+ .debug_abbrev  0x000009b7       0x71 obj/xcode-im_rscanf.o
+ .debug_abbrev  0x00000a28      0x1c4 obj/xcode-im_sdcard.o
+ .debug_abbrev  0x00000bec      0x1ba obj/xcode-im_ff.o
+ .debug_abbrev  0x00000da6       0xcc obj/xcode-im_diskio.o
+ .debug_abbrev  0x00000e72       0xfc obj/xcode-im_screen.o
+ .debug_abbrev  0x00000f6e      0x110 obj/xcode-im_oled.o
+ .debug_abbrev  0x0000107e       0xb9 obj/xcode-im_font.o
+ .debug_abbrev  0x00001137       0xfd obj/xcode-im_i2c.o
+ .debug_abbrev  0x00001234      0x21f obj/xcode-im_blconfgui.o
+ .debug_abbrev  0x00001453       0xec obj/xcode-im_nvmrc.o
+ .debug_abbrev  0x0000153f       0x79 obj/xcode-im_abort.o
+ .debug_abbrev  0x000015b8       0xfb obj/xcode-im_time.o
+ .debug_abbrev  0x000016b3       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000016c7       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_abbrev  0x000016db       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_abbrev  0x000016ef       0x14 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00001703       0x99 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000179c       0x94 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_abbrev  0x00001830       0x96 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_abbrev  0x000018c6       0x92 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_abbrev  0x00001958       0x9d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_aranges  0x00000000      0x850
+ .debug_aranges
+                0x00000000       0x30 obj/xcode-im_board_cstartup-im.o
+ .debug_aranges
+                0x00000030       0x20 obj/xcode-im_main.o
+ .debug_aranges
+                0x00000050       0x50 obj/xcode-im_ugscrdrv.o
+ .debug_aranges
+                0x000000a0       0xa8 obj/xcode-im_microgui.o
+ .debug_aranges
+                0x00000148       0x28 obj/xcode-im_fastfixmath.o
+ .debug_aranges
+                0x00000170       0x58 obj/xcode-im_board_lowlevel.o
+ .debug_aranges
+                0x000001c8       0x58 obj/xcode-im_pmc.o
+ .debug_aranges
+                0x00000220       0x30 obj/xcode-im_serial.o
+ .debug_aranges
+                0x00000250       0x28 obj/xcode-im_spi.o
+ .debug_aranges
+                0x00000278       0x28 obj/xcode-im_delay.o
+ .debug_aranges
+                0x000002a0       0x30 obj/xcode-im_rprintf.o
+ .debug_aranges
+                0x000002d0       0x20 obj/xcode-im_rscanf.o
+ .debug_aranges
+                0x000002f0       0x70 obj/xcode-im_sdcard.o
+ .debug_aranges
+                0x00000360      0x158 obj/xcode-im_ff.o
+ .debug_aranges
+                0x000004b8       0x48 obj/xcode-im_diskio.o
+ .debug_aranges
+                0x00000500       0x40 obj/xcode-im_screen.o
+ .debug_aranges
+                0x00000540       0x38 obj/xcode-im_oled.o
+ .debug_aranges
+                0x00000578       0x40 obj/xcode-im_font.o
+ .debug_aranges
+                0x000005b8       0x60 obj/xcode-im_i2c.o
+ .debug_aranges
+                0x00000618       0x80 obj/xcode-im_blconfgui.o
+ .debug_aranges
+                0x00000698       0x40 obj/xcode-im_nvmrc.o
+ .debug_aranges
+                0x000006d8       0x28 obj/xcode-im_abort.o
+ .debug_aranges
+                0x00000700       0x30 obj/xcode-im_time.o
+ .debug_aranges
+                0x00000730       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000750       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x00000770       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_aranges
+                0x00000790       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x000007b0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x000007d0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_aranges
+                0x000007f0       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_aranges
+                0x00000810       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_aranges
+                0x00000830       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_ranges   0x00000000      0x678
+ .debug_ranges  0x00000000       0x28 obj/xcode-im_board_cstartup-im.o
+ .debug_ranges  0x00000028       0x18 obj/xcode-im_main.o
+ .debug_ranges  0x00000040       0x48 obj/xcode-im_ugscrdrv.o
+ .debug_ranges  0x00000088       0xa0 obj/xcode-im_microgui.o
+ .debug_ranges  0x00000128       0x20 obj/xcode-im_fastfixmath.o
+ .debug_ranges  0x00000148       0x50 obj/xcode-im_board_lowlevel.o
+ .debug_ranges  0x00000198       0x50 obj/xcode-im_pmc.o
+ .debug_ranges  0x000001e8       0x28 obj/xcode-im_serial.o
+ .debug_ranges  0x00000210       0x20 obj/xcode-im_spi.o
+ .debug_ranges  0x00000230       0x20 obj/xcode-im_delay.o
+ .debug_ranges  0x00000250       0x28 obj/xcode-im_rprintf.o
+ .debug_ranges  0x00000278       0x18 obj/xcode-im_rscanf.o
+ .debug_ranges  0x00000290       0x68 obj/xcode-im_sdcard.o
+ .debug_ranges  0x000002f8      0x150 obj/xcode-im_ff.o
+ .debug_ranges  0x00000448       0x40 obj/xcode-im_diskio.o
+ .debug_ranges  0x00000488       0x38 obj/xcode-im_screen.o
+ .debug_ranges  0x000004c0       0x30 obj/xcode-im_oled.o
+ .debug_ranges  0x000004f0       0x38 obj/xcode-im_font.o
+ .debug_ranges  0x00000528       0x58 obj/xcode-im_i2c.o
+ .debug_ranges  0x00000580       0x78 obj/xcode-im_blconfgui.o
+ .debug_ranges  0x000005f8       0x38 obj/xcode-im_nvmrc.o
+ .debug_ranges  0x00000630       0x20 obj/xcode-im_abort.o
+ .debug_ranges  0x00000650       0x28 obj/xcode-im_time.o
+
+.debug_frame    0x00000000     0x165c
+ .debug_frame   0x00000000       0x30 obj/xcode-im_main.o
+ .debug_frame   0x00000030       0xf0 obj/xcode-im_ugscrdrv.o
+ .debug_frame   0x00000120      0x25c obj/xcode-im_microgui.o
+ .debug_frame   0x0000037c       0x50 obj/xcode-im_fastfixmath.o
+ .debug_frame   0x000003cc      0x110 obj/xcode-im_board_lowlevel.o
+ .debug_frame   0x000004dc      0x110 obj/xcode-im_pmc.o
+ .debug_frame   0x000005ec       0x70 obj/xcode-im_serial.o
+ .debug_frame   0x0000065c       0x50 obj/xcode-im_spi.o
+ .debug_frame   0x000006ac       0x50 obj/xcode-im_delay.o
+ .debug_frame   0x000006fc       0x74 obj/xcode-im_rprintf.o
+ .debug_frame   0x00000770       0x30 obj/xcode-im_rscanf.o
+ .debug_frame   0x000007a0      0x170 obj/xcode-im_sdcard.o
+ .debug_frame   0x00000910      0x510 obj/xcode-im_ff.o
+ .debug_frame   0x00000e20       0xd0 obj/xcode-im_diskio.o
+ .debug_frame   0x00000ef0       0xb0 obj/xcode-im_screen.o
+ .debug_frame   0x00000fa0       0x90 obj/xcode-im_oled.o
+ .debug_frame   0x00001030       0xb0 obj/xcode-im_font.o
+ .debug_frame   0x000010e0      0x130 obj/xcode-im_i2c.o
+ .debug_frame   0x00001210      0x1b0 obj/xcode-im_blconfgui.o
+ .debug_frame   0x000013c0       0xb0 obj/xcode-im_nvmrc.o
+ .debug_frame   0x00001470       0x50 obj/xcode-im_abort.o
+ .debug_frame   0x000014c0       0x70 obj/xcode-im_time.o
+ .debug_frame   0x00001530       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001558       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_divsi3.o)
+ .debug_frame   0x00001580       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2\libgcc.a(_umodsi3.o)
+ .debug_frame   0x000015a8       0x2c c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_frame   0x000015d4       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_frame   0x000015f4       0x28 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_frame   0x0000161c       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_frame   0x0000163c       0x20 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_loc      0x00000000     0x1d0b
+ .debug_loc     0x00000000       0x2a obj/xcode-im_main.o
+ .debug_loc     0x0000002a      0x126 obj/xcode-im_ugscrdrv.o
+ .debug_loc     0x00000150      0x30c obj/xcode-im_microgui.o
+ .debug_loc     0x0000045c       0x54 obj/xcode-im_fastfixmath.o
+ .debug_loc     0x000004b0      0x150 obj/xcode-im_board_lowlevel.o
+ .debug_loc     0x00000600      0x150 obj/xcode-im_pmc.o
+ .debug_loc     0x00000750       0x7e obj/xcode-im_serial.o
+ .debug_loc     0x000007ce       0x54 obj/xcode-im_spi.o
+ .debug_loc     0x00000822       0x54 obj/xcode-im_delay.o
+ .debug_loc     0x00000876       0x7e obj/xcode-im_rprintf.o
+ .debug_loc     0x000008f4       0x2a obj/xcode-im_rscanf.o
+ .debug_loc     0x0000091e      0x1ce obj/xcode-im_sdcard.o
+ .debug_loc     0x00000aec      0x690 obj/xcode-im_ff.o
+ .debug_loc     0x0000117c       0xfc obj/xcode-im_diskio.o
+ .debug_loc     0x00001278       0xd2 obj/xcode-im_screen.o
+ .debug_loc     0x0000134a       0xa8 obj/xcode-im_oled.o
+ .debug_loc     0x000013f2       0xd2 obj/xcode-im_font.o
+ .debug_loc     0x000014c4      0x17a obj/xcode-im_i2c.o
+ .debug_loc     0x0000163e      0x222 obj/xcode-im_blconfgui.o
+ .debug_loc     0x00001860       0xd2 obj/xcode-im_nvmrc.o
+ .debug_loc     0x00001932       0x54 obj/xcode-im_abort.o
+ .debug_loc     0x00001986       0x7e obj/xcode-im_time.o
+ .debug_loc     0x00001a04      0x130 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_loc     0x00001b34       0x47 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_loc     0x00001b7b      0x128 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_loc     0x00001ca3       0x4a c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_loc     0x00001ced       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_pubnames
+                0x00000000     0x1170
+ .debug_pubnames
+                0x00000000       0x45 obj/xcode-im_main.o
+ .debug_pubnames
+                0x00000045       0xb5 obj/xcode-im_ugscrdrv.o
+ .debug_pubnames
+                0x000000fa      0x16c obj/xcode-im_microgui.o
+ .debug_pubnames
+                0x00000266       0x37 obj/xcode-im_fastfixmath.o
+ .debug_pubnames
+                0x0000029d       0xa4 obj/xcode-im_board_lowlevel.o
+ .debug_pubnames
+                0x00000341       0xf0 obj/xcode-im_pmc.o
+ .debug_pubnames
+                0x00000431       0x6d obj/xcode-im_serial.o
+ .debug_pubnames
+                0x0000049e       0x42 obj/xcode-im_spi.o
+ .debug_pubnames
+                0x000004e0       0x28 obj/xcode-im_delay.o
+ .debug_pubnames
+                0x00000508       0x4a obj/xcode-im_rprintf.o
+ .debug_pubnames
+                0x00000552       0x1f obj/xcode-im_rscanf.o
+ .debug_pubnames
+                0x00000571      0x10c obj/xcode-im_sdcard.o
+ .debug_pubnames
+                0x0000067d      0x10c obj/xcode-im_ff.o
+ .debug_pubnames
+                0x00000789       0x72 obj/xcode-im_diskio.o
+ .debug_pubnames
+                0x000007fb       0xb9 obj/xcode-im_screen.o
+ .debug_pubnames
+                0x000008b4       0x53 obj/xcode-im_oled.o
+ .debug_pubnames
+                0x00000907       0xe9 obj/xcode-im_font.o
+ .debug_pubnames
+                0x000009f0       0xe7 obj/xcode-im_i2c.o
+ .debug_pubnames
+                0x00000ad7      0x4f6 obj/xcode-im_blconfgui.o
+ .debug_pubnames
+                0x00000fcd       0x7c obj/xcode-im_nvmrc.o
+ .debug_pubnames
+                0x00001049       0x3a obj/xcode-im_abort.o
+ .debug_pubnames
+                0x00001083       0x5a obj/xcode-im_time.o
+ .debug_pubnames
+                0x000010dd       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x000010fa       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x00001117       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .debug_pubnames
+                0x00001135       0x1e c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .debug_pubnames
+                0x00001153       0x1d c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+
+.debug_str      0x00000000     0x1ec8
+ .debug_str     0x00000000      0x2b1 obj/xcode-im_main.o
+                                0x2ef (size before relaxing)
+ .debug_str     0x000002b1       0xc6 obj/xcode-im_ugscrdrv.o
+                                0x1b2 (size before relaxing)
+ .debug_str     0x00000377      0x36d obj/xcode-im_microgui.o
+                                0x4bc (size before relaxing)
+ .debug_str     0x000006e4       0x35 obj/xcode-im_fastfixmath.o
+                                 0x65 (size before relaxing)
+ .debug_str     0x00000719      0x32f obj/xcode-im_board_lowlevel.o
+                                0x4d4 (size before relaxing)
+ .debug_str     0x00000a48       0xde obj/xcode-im_pmc.o
+                                0x255 (size before relaxing)
+ .debug_str     0x00000b26      0x145 obj/xcode-im_serial.o
+                                0x34c (size before relaxing)
+ .debug_str     0x00000c6b       0xeb obj/xcode-im_spi.o
+                                0x39f (size before relaxing)
+ .debug_str     0x00000d56       0x1f obj/xcode-im_delay.o
+                                 0xdc (size before relaxing)
+ .debug_str     0x00000d75       0x96 obj/xcode-im_rprintf.o
+                                0x17a (size before relaxing)
+ .debug_str     0x00000e0b       0x1b obj/xcode-im_rscanf.o
+                                 0xd4 (size before relaxing)
+ .debug_str     0x00000e26      0x1b6 obj/xcode-im_sdcard.o
+                                0x366 (size before relaxing)
+ .debug_str     0x00000fdc      0x457 obj/xcode-im_ff.o
+                                0x52b (size before relaxing)
+ .debug_str     0x00001433       0x6d obj/xcode-im_diskio.o
+                                0x1d5 (size before relaxing)
+ .debug_str     0x000014a0      0x109 obj/xcode-im_screen.o
+                                0x217 (size before relaxing)
+ .debug_str     0x000015a9       0x8d obj/xcode-im_oled.o
+                                0x3a3 (size before relaxing)
+ .debug_str     0x00001636       0xba obj/xcode-im_font.o
+                                0x1c2 (size before relaxing)
+ .debug_str     0x000016f0      0x1b9 obj/xcode-im_i2c.o
+                                0x2aa (size before relaxing)
+ .debug_str     0x000018a9      0x36f obj/xcode-im_blconfgui.o
+                                0xb17 (size before relaxing)
+ .debug_str     0x00001c18       0x4f obj/xcode-im_nvmrc.o
+                                0x1a8 (size before relaxing)
+ .debug_str     0x00001c67       0x39 obj/xcode-im_abort.o
+                                 0xed (size before relaxing)
+ .debug_str     0x00001ca0       0x51 obj/xcode-im_time.o
+                                0x357 (size before relaxing)
+ .debug_str     0x00001cf1       0xaf c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+                                 0xdb (size before relaxing)
+ .debug_str     0x00001da0       0x53 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+                                0x130 (size before relaxing)
+ .debug_str     0x00001df3       0x42 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+                                0x147 (size before relaxing)
+ .debug_str     0x00001e35       0x42 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+                                0x125 (size before relaxing)
+ .debug_str     0x00001e77       0x51 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
+                                0x12e (size before relaxing)
+
+.comment        0x00000000      0x1e6
+ .comment       0x00000000       0x12 obj/xcode-im_main.o
+ .comment       0x00000012       0x12 obj/xcode-im_ugscrdrv.o
+ .comment       0x00000024       0x12 obj/xcode-im_microgui.o
+ .comment       0x00000036       0x12 obj/xcode-im_fastfixmath.o
+ .comment       0x00000048       0x12 obj/xcode-im_board_lowlevel.o
+ .comment       0x0000005a       0x12 obj/xcode-im_pmc.o
+ .comment       0x0000006c       0x12 obj/xcode-im_serial.o
+ .comment       0x0000007e       0x12 obj/xcode-im_spi.o
+ .comment       0x00000090       0x12 obj/xcode-im_delay.o
+ .comment       0x000000a2       0x12 obj/xcode-im_rprintf.o
+ .comment       0x000000b4       0x12 obj/xcode-im_rscanf.o
+ .comment       0x000000c6       0x12 obj/xcode-im_sdcard.o
+ .comment       0x000000d8       0x12 obj/xcode-im_ff.o
+ .comment       0x000000ea       0x12 obj/xcode-im_diskio.o
+ .comment       0x000000fc       0x12 obj/xcode-im_screen.o
+ .comment       0x0000010e       0x12 obj/xcode-im_oled.o
+ .comment       0x00000120       0x12 obj/xcode-im_font.o
+ .comment       0x00000132       0x12 obj/xcode-im_i2c.o
+ .comment       0x00000144       0x12 obj/xcode-im_blconfgui.o
+ .comment       0x00000156       0x12 obj/xcode-im_nvmrc.o
+ .comment       0x00000168       0x12 obj/xcode-im_abort.o
+ .comment       0x0000017a       0x12 obj/xcode-im_time.o
+ .comment       0x0000018c       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-memcpy.o)
+ .comment       0x0000019e       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strlen.o)
+ .comment       0x000001b0       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strncpy.o)
+ .comment       0x000001c2       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strnlen.o)
+ .comment       0x000001d4       0x12 c:/yagarto/bin/../lib/gcc/arm-elf/4.3.2/../../../../arm-elf/lib\libg.a(lib_a-strstr.o)
